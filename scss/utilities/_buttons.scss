@@ -1,0 +1,81 @@
+// =================================================================================
+// Button styles
+// =================================================================================
+
+.sidenav i {
+  margin-right: 8px;
+}
+
+.sidenav li {
+  display: block;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: $med-txt;
+  color: #f4dbba;
+  padding: 15px;
+  margin: 5px 0;
+  background-color: rgb(99, 97, 96);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  &:hover {
+    color: #fff;
+    background-color: $btn-hover;
+    font-weight: $bold-txt;
+  }
+}
+.social-media {
+  position: absolute;
+  left: 30%;
+  transform: translate(-30%);
+  font-size: 20px;
+  display: flex;
+}
+
+.social-media i {
+  margin: 0 auto;
+}
+
+.social-media a {
+  margin: 10px;
+  border-radius: 5px;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+}
+
+#fb-ico {
+  color: $fb;
+  background-color: #f7f5f4;
+  &:hover {
+    background-color: $fb;
+    color: #fff;
+  }
+}
+
+#li-ico {
+  color: $li-in;
+  background-color: #f7f5f4;
+  &:hover {
+    background-color: $li-in;
+    color: #fff;
+  }
+}
+
+#insta {
+  color: $insta;
+  background-color: #f7f5f4;
+  &:hover {
+    background-color: $insta;
+    color: #fff;
+  }
+}
+
+#tweet {
+  color: $tweet;
+  background-color: #f7f5f4;
+  &:hover {
+    background-color: $tweet;
+    color: #fff;
+  }
+}

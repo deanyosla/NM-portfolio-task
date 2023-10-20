@@ -1,0 +1,125 @@
+.sidenav i {
+  margin-right: 8px;
+}
+
+.sidenav li {
+  display: block;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #f4dbba;
+  padding: 15px;
+  margin: 5px 0;
+  background-color: rgb(99, 97, 96);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.sidenav li:hover {
+  color: #fff;
+  background-color: #fe6f5e;
+  font-weight: 600;
+}
+
+.social-media {
+  position: absolute;
+  left: 30%;
+  transform: translate(-30%);
+  font-size: 20px;
+  display: flex;
+}
+
+.social-media i {
+  margin: 0 auto;
+}
+
+.social-media a {
+  margin: 10px;
+  border-radius: 5px;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+}
+
+#fb-ico {
+  color: #3b5998;
+  background-color: #f7f5f4;
+}
+#fb-ico:hover {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+#li-ico {
+  color: #007bb6;
+  background-color: #f7f5f4;
+}
+#li-ico:hover {
+  background-color: #007bb6;
+  color: #fff;
+}
+
+#insta {
+  color: #d62976;
+  background-color: #f7f5f4;
+}
+#insta:hover {
+  background-color: #d62976;
+  color: #fff;
+}
+
+#tweet {
+  color: #55acee;
+  background-color: #f7f5f4;
+}
+#tweet:hover {
+  background-color: #55acee;
+  color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.wrapper .sidenav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 15vw;
+  height: 100vh;
+  background: #231f20;
+}
+
+.sidenav a {
+  color: #fff;
+}
+
+.sidenav h1 {
+  color: #fff;
+  text-align: center;
+  line-height: 90px;
+  font-size: 50px;
+  font-weight: 600;
+  border-bottom: 2px solid white;
+  margin-bottom: 50px;
+  background-color: #fe6f5e;
+  border-radius: 3px;
+}
+
+.wrapper .main-content {
+  width: 85vw;
+  margin-left: 15vw;
+}
+
+/*# sourceMappingURL=style.css.map */
