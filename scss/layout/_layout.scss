@@ -34,14 +34,20 @@
 
 .banner-image {
   background-color: #fe6f5e;
-  background-image: url("../../images/IMG_01.JPG");
-  background-blend-mode: darken;
+  background-blend-mode: multiply;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 200px 10px;
+  padding: 180px 10px;
   h1,
   p {
     text-align: center;
+    color: #fff;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  p {
+    font-size: 2rem;
   }
 }
