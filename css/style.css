@@ -122,4 +122,18 @@ a {
   margin-left: 15vw;
 }
 
+.banner-image {
+  background-color: #fe6f5e;
+  background-image: url("../../images/IMG_01.JPG");
+  background-blend-mode: darken;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px 10px;
+}
+.banner-image h1,
+.banner-image p {
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */
