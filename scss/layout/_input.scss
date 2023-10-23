@@ -1,0 +1,52 @@
+// ======================================================================
+// Input field styles
+// ======================================================================
+
+input[type="text"],
+input[type="email"] {
+  width: 80%;
+  background-color: #fff;
+  margin: 5px 15px;
+  border-radius: 5px;
+  padding-left: 5px;
+  height: 50px;
+  outline: none;
+  border: 2px $txt-color solid;
+  &:focus {
+    border: rgba(9, 122, 234, 0.5) 3px solid;
+  }
+}
+
+textarea {
+  resize: none;
+  background-color: #fff;
+  width: 80%;
+  margin: 5px 15px;
+  border-radius: 5px;
+  padding-left: 5px;
+  height: 100px;
+  font-weight: $med-txt;
+  border: 2px $txt-color solid;
+  outline: none;
+  &:focus {
+    border: rgba(9, 122, 234, 0.5) 3px solid;
+  }
+}
+
+.btn-submit {
+  list-style: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-weight: $med-txt;
+  color: $txt-color;
+  padding: 15px;
+  margin: 15px;
+  background-color: rgb(99, 97, 96);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  &:hover {
+    color: #fff;
+    background-color: $btn-hover;
+    font-weight: $bold-txt;
+  }
+}

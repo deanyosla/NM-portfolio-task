@@ -81,7 +81,7 @@
 .scroll-up {
   display: flex;
   flex-direction: column;
-  padding-top: 35%;
+  padding-top: 80%;
   padding-bottom: 10px;
   text-align: center;
   color: #fff;
@@ -101,6 +101,7 @@
 
 .scroll-up {
   padding-top: 10%;
+  margin-bottom: 5px;
 }
 
 * {
@@ -150,13 +151,16 @@ a {
 }
 
 .banner-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #fe6f5e;
   background-blend-mode: multiply;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 180px 10px;
-  height: 85vh;
+  height: 100vh;
 }
 .banner-image h1,
 .banner-image p {
@@ -164,51 +168,125 @@ a {
   color: #fff;
 }
 .banner-image h1 {
-  font-size: 3.5rem;
   font-weight: 600;
   text-shadow: #fff -2px 0 2px;
 }
 .banner-image p {
-  font-size: 2rem;
   font-weight: 400;
   text-shadow: #fff -2px 0 2px;
 }
 
 .contact-section {
-  margin: 0 15px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 40px;
+  border-bottom: 1px dotted #fe6f5e;
 }
 .contact-section h2 {
   text-align: center;
   font-size: 2.2em;
   text-transform: uppercase;
   margin-bottom: 3px;
+  color: #fe6f5e;
 }
 .contact-section h3 {
   text-transform: uppercase;
   font-size: 1.5em;
   margin-bottom: 3px;
+  color: #fe6f5e;
 }
 .contact-section h4,
-.contact-section a {
+.contact-section h4 a {
   font-size: 1.2em;
-  color: #000;
+  color: #fe6f5e;
   margin-bottom: 3px;
 }
 .contact-section h4:hover,
-.contact-section a:hover {
+.contact-section h4 a:hover {
   text-decoration: underline;
   text-decoration-style: dashed;
 }
 .contact-section p {
   margin-bottom: 3px;
+  font-weight: 400;
 }
-.contact-section section {
-  border: 1px solid #fe6f5e;
-  margin-right: 80%;
+.contact-section #contact {
+  border: 2px solid #fe6f5e;
+  box-shadow: inset;
+  margin: 5px;
   border-radius: 5px;
   padding: 5px;
-  padding-bottom: 40%;
+  height: 100%;
+  width: 95%;
   background-color: #fff;
+}
+.contact-section #contact-form {
+  border: 2px solid #fe6f5e;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  height: 100%;
+  width: 95%;
+  background-color: #fff;
+}
+
+::placeholder {
+  color: #fe6f5e;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+input[type=text],
+input[type=email] {
+  width: 80%;
+  background-color: #fff;
+  margin: 5px 15px;
+  border-radius: 5px;
+  padding-left: 5px;
+  height: 50px;
+  outline: none;
+  border: 2px #f4dbba solid;
+}
+input[type=text]:focus,
+input[type=email]:focus {
+  border: rgba(9, 122, 234, 0.5) 3px solid;
+}
+
+textarea {
+  resize: none;
+  background-color: #fff;
+  width: 80%;
+  margin: 5px 15px;
+  border-radius: 5px;
+  padding-left: 5px;
+  height: 100px;
+  font-weight: 500;
+  border: 2px #f4dbba solid;
+  outline: none;
+}
+textarea:focus {
+  border: rgba(9, 122, 234, 0.5) 3px solid;
+}
+
+.btn-submit {
+  list-style: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-weight: 500;
+  color: #f4dbba;
+  padding: 15px;
+  margin: 15px;
+  background-color: rgb(99, 97, 96);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.btn-submit:hover {
+  color: #fff;
+  background-color: #fe6f5e;
+  font-weight: 600;
 }
 
 @media (max-width: 991px) {
