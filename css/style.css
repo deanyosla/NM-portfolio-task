@@ -77,6 +77,32 @@
   color: #fff;
 }
 
+.scroll,
+.scroll-up {
+  display: flex;
+  flex-direction: column;
+  padding-top: 35%;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  scroll-behavior: smooth;
+}
+.scroll a,
+.scroll-up a {
+  color: #fff;
+}
+.scroll a:hover,
+.scroll-up a:hover {
+  text-decoration: underline;
+  text-shadow: #fff 0 -2px 10px;
+}
+
+.scroll-up {
+  padding-top: 10%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -85,6 +111,7 @@
 body {
   font-family: Poppins, sans-serif;
   overflow-x: hidden;
+  background-color: #f4dbba;
 }
 
 a {
@@ -129,6 +156,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 180px 10px;
+  height: 85vh;
 }
 .banner-image h1,
 .banner-image p {
@@ -137,9 +165,60 @@ a {
 }
 .banner-image h1 {
   font-size: 3.5rem;
+  font-weight: 600;
+  text-shadow: #fff -2px 0 2px;
 }
 .banner-image p {
   font-size: 2rem;
+  font-weight: 400;
+  text-shadow: #fff -2px 0 2px;
+}
+
+.contact-section {
+  margin: 0 15px;
+}
+.contact-section h2 {
+  text-align: center;
+  font-size: 2.2em;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+.contact-section h3 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin-bottom: 3px;
+}
+.contact-section h4,
+.contact-section a {
+  font-size: 1.2em;
+  color: #000;
+  margin-bottom: 3px;
+}
+.contact-section h4:hover,
+.contact-section a:hover {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+.contact-section p {
+  margin-bottom: 3px;
+}
+.contact-section section {
+  border: 1px solid #fe6f5e;
+  margin-right: 80%;
+  border-radius: 5px;
+  padding: 5px;
+  padding-bottom: 40%;
+  background-color: #fff;
+}
+
+@media (max-width: 991px) {
+  .sidenav {
+    display: none;
+  }
+  .wrapper .main-content {
+    width: 100vw;
+    margin-left: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

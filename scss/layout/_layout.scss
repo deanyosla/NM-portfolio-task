@@ -20,7 +20,7 @@
   text-align: center;
   line-height: 90px;
   font-size: 50px;
-  font-weight: 600;
+  font-weight: $bold-txt;
   border-bottom: 2px solid white;
   margin-bottom: 50px;
   background-color: $btn-hover;
@@ -39,6 +39,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 180px 10px;
+  height: 85vh;
   h1,
   p {
     text-align: center;
@@ -46,8 +47,48 @@
   }
   h1 {
     font-size: 3.5rem;
+    font-weight: $bold-txt;
+    text-shadow: #fff -2px 0 2px;
   }
   p {
     font-size: 2rem;
+    font-weight: $light-txt;
+    text-shadow: #fff -2px 0 2px;
+  }
+}
+
+.contact-section {
+  margin: 0 15px;
+  h2 {
+    text-align: center;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+  }
+  h3 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin-bottom: 3px;
+  }
+  h4,
+  a {
+    font-size: 1.2em;
+    color: #000;
+    margin-bottom: 3px;
+    &:hover {
+      text-decoration: underline;
+      text-decoration-style: dashed;
+    }
+  }
+  p {
+    margin-bottom: 3px;
+  }
+  section {
+    border: 1px solid $btn-hover;
+    margin-right: 80%;
+    border-radius: 5px;
+    padding: 5px;
+    padding-bottom: 40%;
+    background-color: #fff;
   }
 }
