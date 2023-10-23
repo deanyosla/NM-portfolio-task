@@ -84,7 +84,7 @@
 .scroll-up {
   display: flex;
   flex-direction: column;
-  padding-top: 80%;
+  padding-top: 50vh;
   padding-bottom: 10px;
   text-align: center;
   color: #fff;
@@ -103,4 +103,21 @@
 .scroll-up {
   padding-top: 10%;
   margin-bottom: 5px;
+}
+
+.hidden-nav {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #fff;
+  height: 45px;
+  width: 45px;
+  background-color: $txt-color;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: $btn-hover;
+  }
 }
