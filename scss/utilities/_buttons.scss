@@ -11,7 +11,7 @@
   list-style: none;
   text-transform: uppercase;
   font-weight: $med-txt;
-  color: $txt-color;
+  color: $btn-regular;
   padding: 15px;
   margin: 5px 0;
   background-color: rgb(99, 97, 96);
@@ -21,7 +21,13 @@
     color: #fff;
     background-color: $btn-hover;
     font-weight: $bold-txt;
+    box-shadow: 0px 0px 20px $btn-hover;
   }
+}
+.sidenav h1:hover {
+  background-color: $txt-color;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px $btn-hover;
 }
 .social-media {
   position: absolute;
@@ -44,14 +50,14 @@
   align-items: center;
 }
 
-#fb-ico {
-  color: $fb;
-  background-color: #f7f5f4;
-  &:hover {
-    background-color: $fb;
-    color: #fff;
-  }
-}
+// #fb-ico {
+//   color: $fb;
+//   background-color: #f7f5f4;
+//   &:hover {
+//     background-color: $fb;
+//     color: #fff;
+//   }
+// }
 
 #li-ico {
   color: $li-in;
@@ -71,14 +77,14 @@
   }
 }
 
-#tweet {
-  color: $tweet;
-  background-color: #f7f5f4;
-  &:hover {
-    background-color: $tweet;
-    color: #fff;
-  }
-}
+// #tweet {
+//   color: $tweet;
+//   background-color: #f7f5f4;
+//   &:hover {
+//     background-color: $tweet;
+//     color: #fff;
+//   }
+// }
 
 .scroll,
 .scroll-up {
@@ -101,7 +107,7 @@
 }
 
 .scroll-up {
-  padding-top: 10%;
+  padding-top: 0.5%;
   margin-bottom: 5px;
 }
 

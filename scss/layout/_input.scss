@@ -13,10 +13,14 @@ input[type="email"] {
   outline: none;
   border: 2px $txt-color solid;
   &:focus {
-    border: rgba(9, 122, 234, 0.5) 3px solid;
+    box-shadow: 0px 0px 20px $btn-hover;
   }
 }
-
+::placeholder {
+  color: $btn-hover;
+  font-weight: $bold-txt;
+  font-size: 0.8rem;
+}
 textarea {
   resize: none;
   background-color: #fff;
@@ -29,16 +33,17 @@ textarea {
   border: 2px $txt-color solid;
   outline: none;
   &:focus {
-    border: rgba(9, 122, 234, 0.5) 3px solid;
+    box-shadow: 0px 0px 20px $btn-hover;
   }
 }
 
-.btn-submit {
+.btn-submit,
+.project-btn {
   list-style: none;
   text-transform: uppercase;
   border-radius: 5px;
   font-weight: $med-txt;
-  color: $txt-color;
+  color: $btn-regular;
   padding: 15px;
   margin: 15px;
   background-color: rgb(99, 97, 96);
@@ -49,5 +54,6 @@ textarea {
     color: #fff;
     background-color: $btn-hover;
     font-weight: $bold-txt;
+    box-shadow: 0px 0px 20px $btn-hover;
   }
 }
