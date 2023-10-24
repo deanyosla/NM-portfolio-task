@@ -20,8 +20,12 @@
 
 @media (min-width: 992px) {
   .tab-1,
-  .tab-2 {
-    width: 40%;
+  .tab-2,
+  .tab-3,
+  .tab-4,
+  .tab-5,
+  .tab-6 {
+    width: 28%;
   }
   .project-img {
     height: 280px;
@@ -34,17 +38,13 @@
   .contact-section {
     display: flex;
     flex-direction: row;
-    h4,
-    h4 a {
-      font-size: 1.15rem;
-    }
     #contact {
-      width: 32%;
+      width: 30%;
       height: auto;
       text-align: left;
     }
     #contact-form {
-      width: 60%;
+      width: 50%;
       height: auto;
     }
   }

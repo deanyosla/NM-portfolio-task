@@ -127,6 +127,13 @@ a {
   cursor: pointer;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
 .wrapper .sidenav {
   position: fixed;
   left: 0;
@@ -198,7 +205,6 @@ a {
 }
 
 .contact-section {
-  margin: 15px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -232,17 +238,19 @@ a {
 }
 .contact-section #contact {
   border: 2px solid #ff3b3f;
-  margin: 5px;
   border-radius: 5px;
   padding: 5px;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
   height: 100%;
   width: 95%;
   background-color: #fff;
 }
 .contact-section #contact-form {
   border: 2px solid #ff3b3f;
-  margin: 5px;
   border-radius: 5px;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
   padding: 5px;
   height: 100%;
   width: 95%;
@@ -262,6 +270,7 @@ a {
   width: 90%;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
   text-align: center;
   margin: 1.5rem;
@@ -269,7 +278,11 @@ a {
 }
 
 .project-card .tab-1,
-.project-card .tab-2 {
+.project-card .tab-2,
+.project-card .tab-3,
+.project-card .tab-4,
+.project-card .tab-5,
+.project-card .tab-6 {
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -283,13 +296,21 @@ a {
   margin-top: 10px;
 }
 .project-card .tab-1:hover,
-.project-card .tab-2:hover {
+.project-card .tab-2:hover,
+.project-card .tab-3:hover,
+.project-card .tab-4:hover,
+.project-card .tab-5:hover,
+.project-card .tab-6:hover {
   top: -5px;
   transition: 0.5s ease;
   box-shadow: 0px 0px 20px #ff3b3f;
 }
 .project-card .tab-1 p,
-.project-card .tab-2 p {
+.project-card .tab-2 p,
+.project-card .tab-3 p,
+.project-card .tab-4 p,
+.project-card .tab-5 p,
+.project-card .tab-6 p {
   margin-top: 5px;
   padding: 20px;
   color: #ff3b3f;
@@ -298,11 +319,19 @@ a {
   min-width: fit-content;
 }
 .project-card .tab-1 img,
-.project-card .tab-2 img {
+.project-card .tab-2 img,
+.project-card .tab-3 img,
+.project-card .tab-4 img,
+.project-card .tab-5 img,
+.project-card .tab-6 img {
   white-space: nowrap;
 }
 .project-card .tab-1 a,
-.project-card .tab-2 a {
+.project-card .tab-2 a,
+.project-card .tab-3 a,
+.project-card .tab-4 a,
+.project-card .tab-5 a,
+.project-card .tab-6 a {
   white-space: nowrap;
   max-width: fit-content;
   min-width: fit-content;
@@ -326,8 +355,10 @@ input[type=email]:focus {
 
 ::placeholder {
   color: #ff3b3f;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 0.8rem;
+  opacity: 1;
+  padding: 5px;
 }
 
 textarea {
@@ -338,7 +369,6 @@ textarea {
   border-radius: 5px;
   padding-left: 5px;
   height: 150px;
-  font-weight: 500;
   border: 2px #a9a9a9 solid;
   outline: none;
 }
@@ -396,8 +426,12 @@ form h2 {
 }
 @media (min-width: 992px) {
   .tab-1,
-  .tab-2 {
-    width: 40%;
+  .tab-2,
+  .tab-3,
+  .tab-4,
+  .tab-5,
+  .tab-6 {
+    width: 28%;
   }
   .project-img {
     height: 280px;
@@ -411,17 +445,13 @@ form h2 {
     display: flex;
     flex-direction: row;
   }
-  .contact-section h4,
-  .contact-section h4 a {
-    font-size: 1.15rem;
-  }
   .contact-section #contact {
-    width: 32%;
+    width: 30%;
     height: auto;
     text-align: left;
   }
   .contact-section #contact-form {
-    width: 60%;
+    width: 50%;
     height: auto;
   }
 }
