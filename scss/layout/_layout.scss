@@ -21,7 +21,7 @@
   line-height: 90px;
   font-size: 50px;
   font-weight: $bold-txt;
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid white;
   margin-bottom: 50px;
   background-color: $btn-hover;
   border-radius: 3px;
@@ -37,12 +37,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: $txt-color;
+  background-color: $btn-regular;
   background-blend-mode: multiply;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  border-bottom: 1px dotted $btn-hover;
   h1,
   p {
     text-align: center;
@@ -61,7 +62,9 @@
     font-style: italic;
   }
 }
+
 .h2-forms {
+  border-top: 1px dotted $btn-hover;
   text-align: center;
   font-size: 2.2em;
   text-transform: uppercase;
@@ -69,7 +72,7 @@
   color: $btn-hover;
 }
 .contact-section {
-  margin: 10px;
+  margin: 15px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -79,21 +82,24 @@
   h3 {
     text-transform: uppercase;
     font-size: 1.5em;
-    margin-bottom: 3px;
+    margin-bottom: 2%;
+    margin-left: 4%;
     color: $btn-hover;
   }
   h4,
   h4 a {
-    font-size: 1.2em;
+    font-size: 1em;
     color: $btn-hover;
-    margin-bottom: 3px;
+    margin-bottom: 2%;
+    margin-left: 2%;
     &:hover {
       text-decoration: underline;
       text-decoration-style: dashed;
     }
   }
   p {
-    margin-bottom: 3px;
+    margin-bottom: 2%;
+    margin-left: 4%;
     font-weight: $light-txt;
   }
   #contact {

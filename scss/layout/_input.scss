@@ -4,7 +4,7 @@
 
 input[type="text"],
 input[type="email"] {
-  width: 80%;
+  width: 95%;
   background-color: #fff;
   margin: 5px 15px;
   border-radius: 5px;
@@ -24,11 +24,11 @@ input[type="email"] {
 textarea {
   resize: none;
   background-color: #fff;
-  width: 80%;
+  width: 95%;
   margin: 5px 15px;
   border-radius: 5px;
   padding-left: 5px;
-  height: 100px;
+  height: 150px;
   font-weight: $med-txt;
   border: 2px $txt-color solid;
   outline: none;
@@ -56,4 +56,14 @@ textarea {
     font-weight: $bold-txt;
     box-shadow: 0px 0px 20px $btn-hover;
   }
+}
+section h3 {
+  padding-top: 15px;
+  font-weight: $bold-txt;
+}
+form h2 {
+  text-transform: uppercase;
+  padding: 15px;
+  color: $btn-hover;
+  font-size: $bold-txt;
 }
