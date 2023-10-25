@@ -351,6 +351,9 @@ a {
   margin-top: 3vh;
 }
 
+.code .tab-1,
+.code .tab-2,
+.code .tab-3,
 .scs .tab-1,
 .scs .tab-2,
 .scs .tab-3 {
@@ -366,6 +369,9 @@ a {
   top: 0;
   margin-top: 10px;
 }
+.code .tab-1:hover,
+.code .tab-2:hover,
+.code .tab-3:hover,
 .scs .tab-1:hover,
 .scs .tab-2:hover,
 .scs .tab-3:hover {
@@ -373,6 +379,9 @@ a {
   transition: 0.5s ease;
   box-shadow: 0px 0px 20px #ff3b3f;
 }
+.code .tab-1 h2,
+.code .tab-2 h2,
+.code .tab-3 h2,
 .scs .tab-1 h2,
 .scs .tab-2 h2,
 .scs .tab-3 h2 {
@@ -380,6 +389,9 @@ a {
   margin-bottom: 10px;
   font-size: 1.3em;
 }
+.code .tab-1 h3,
+.code .tab-2 h3,
+.code .tab-3 h3,
 .scs .tab-1 h3,
 .scs .tab-2 h3,
 .scs .tab-3 h3 {
@@ -387,6 +399,9 @@ a {
   margin-bottom: 10px;
   font-size: 1em;
 }
+.code .tab-1 p,
+.code .tab-2 p,
+.code .tab-3 p,
 .scs .tab-1 p,
 .scs .tab-2 p,
 .scs .tab-3 p {
@@ -399,6 +414,9 @@ a {
   max-width: fit-content;
   min-width: fit-content;
 }
+.code .tab-1 span,
+.code .tab-2 span,
+.code .tab-3 span,
 .scs .tab-1 span,
 .scs .tab-2 span,
 .scs .tab-3 span {
@@ -407,11 +425,17 @@ a {
   font-size: 0.8em;
   color: #ff3b3f;
 }
+.code .tab-1 span .tab-2 span,
+.code .tab-2 span .tab-2 span,
+.code .tab-3 span .tab-2 span,
 .scs .tab-1 span .tab-2 span,
 .scs .tab-2 span .tab-2 span,
 .scs .tab-3 span .tab-2 span {
   color: #000;
 }
+.code .tab-1 a,
+.code .tab-2 a,
+.code .tab-3 a,
 .scs .tab-1 a,
 .scs .tab-2 a,
 .scs .tab-3 a {
@@ -420,6 +444,9 @@ a {
   max-width: fit-content;
   min-width: fit-content;
 }
+.code .tab-1 a:hover,
+.code .tab-2 a:hover,
+.code .tab-3 a:hover,
 .scs .tab-1 a:hover,
 .scs .tab-2 a:hover,
 .scs .tab-3 a:hover {
@@ -514,10 +541,14 @@ form h2 {
   }
 }
 @media (min-width: 992px) {
-  .project-card {
+  .project-card,
+  .code,
+  .scs {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 3vh;
   }
   .tab-1,
   .tab-2,
@@ -547,12 +578,6 @@ form h2 {
   .contact-section #contact-form {
     width: 50%;
     height: auto;
-  }
-  .scs {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    margin-top: 3vh;
   }
 }
 

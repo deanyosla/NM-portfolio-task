@@ -19,10 +19,14 @@
 }
 
 @media (min-width: 992px) {
-  .project-card {
+  .project-card,
+  .code,
+  .scs {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 3vh;
   }
   .tab-1,
   .tab-2,
@@ -52,11 +56,5 @@
       width: 50%;
       height: auto;
     }
-  }
-  .scs {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    margin-top: 3vh;
   }
 }
