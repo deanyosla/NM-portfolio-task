@@ -195,6 +195,14 @@ a {
   font-style: italic;
 }
 
+.banner-secondary {
+  max-height: 20vh;
+}
+
+.text {
+  padding-bottom: 30vh;
+}
+
 .h2-forms {
   border-top: 1px dotted #ff3b3f;
   text-align: center;
@@ -337,6 +345,87 @@ a {
   min-width: fit-content;
 }
 
+.scs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3vh;
+}
+
+.scs .tab-1,
+.scs .tab-2,
+.scs .tab-3 {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 20px 20px;
+  box-shadow: 0px 0px 20px #efefef;
+  position: relative;
+  transition: 0.5s ease;
+  top: 0;
+  margin-top: 10px;
+}
+.scs .tab-1:hover,
+.scs .tab-2:hover,
+.scs .tab-3:hover {
+  top: -5px;
+  transition: 0.5s ease;
+  box-shadow: 0px 0px 20px #ff3b3f;
+}
+.scs .tab-1 h2,
+.scs .tab-2 h2,
+.scs .tab-3 h2 {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+.scs .tab-1 h3,
+.scs .tab-2 h3,
+.scs .tab-3 h3 {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+.scs .tab-1 p,
+.scs .tab-2 p,
+.scs .tab-3 p {
+  font-size: 0.8em;
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding: 0 20px 10px 20px;
+  color: #ff3b3f;
+  white-space: wrap;
+  max-width: fit-content;
+  min-width: fit-content;
+}
+.scs .tab-1 span,
+.scs .tab-2 span,
+.scs .tab-3 span {
+  margin-left: 20px;
+  white-space: wrap;
+  font-size: 0.8em;
+  color: #ff3b3f;
+}
+.scs .tab-1 span .tab-2 span,
+.scs .tab-2 span .tab-2 span,
+.scs .tab-3 span .tab-2 span {
+  color: #000;
+}
+.scs .tab-1 a,
+.scs .tab-2 a,
+.scs .tab-3 a {
+  color: #000;
+  white-space: nowrap;
+  max-width: fit-content;
+  min-width: fit-content;
+}
+.scs .tab-1 a:hover,
+.scs .tab-2 a:hover,
+.scs .tab-3 a:hover {
+  text-decoration: underline;
+}
+
 input[type=text],
 input[type=email] {
   width: 95%;
@@ -425,13 +514,18 @@ form h2 {
   }
 }
 @media (min-width: 992px) {
+  .project-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
   .tab-1,
   .tab-2,
   .tab-3,
   .tab-4,
   .tab-5,
   .tab-6 {
-    width: 28%;
+    width: 29%;
   }
   .project-img {
     height: 280px;
@@ -453,6 +547,12 @@ form h2 {
   .contact-section #contact-form {
     width: 50%;
     height: auto;
+  }
+  .scs {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 3vh;
   }
 }
 

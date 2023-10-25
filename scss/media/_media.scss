@@ -19,13 +19,18 @@
 }
 
 @media (min-width: 992px) {
+  .project-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
   .tab-1,
   .tab-2,
   .tab-3,
   .tab-4,
   .tab-5,
   .tab-6 {
-    width: 28%;
+    width: 29%;
   }
   .project-img {
     height: 280px;
@@ -47,5 +52,11 @@
       width: 50%;
       height: auto;
     }
+  }
+  .scs {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 3vh;
   }
 }
