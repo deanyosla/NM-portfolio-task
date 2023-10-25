@@ -21,7 +21,8 @@
 @media (min-width: 992px) {
   .project-card,
   .code,
-  .scs {
+  .scs,
+  .about-me {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -42,6 +43,7 @@
     overflow: hidden;
     background-position: center;
     background-size: cover;
+    margin-bottom: 1rem;
     border-bottom: 1px solid $txt-color;
   }
   .contact-section {
@@ -51,10 +53,22 @@
       width: 30%;
       height: auto;
       text-align: left;
+      margin-right: 1rem;
     }
     #contact-form {
       width: 50%;
       height: auto;
     }
+  }
+}
+
+@media (min-width: 1px) and (max-width: 768px) {
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 90%;
+  }
+  .contact-section {
+    margin-left: -10px;
   }
 }

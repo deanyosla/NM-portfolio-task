@@ -40,10 +40,10 @@
 }
 
 .social-media a {
-  margin: 10px;
+  margin: 5px;
   border-radius: 5px;
-  height: 35px;
-  width: 35px;
+  height: 40px;
+  width: 40px;
   display: flex;
   align-items: center;
 }
@@ -63,6 +63,15 @@
 }
 #insta:hover {
   background-color: #d62976;
+  color: #fff;
+}
+
+#github {
+  color: #6e5494;
+  background-color: #f7f5f4;
+}
+#github:hover {
+  background-color: #6e5494;
   color: #fff;
 }
 
@@ -141,6 +150,7 @@ a {
   width: 15vw;
   height: 100vh;
   background: #231f20;
+  border-right: 1px dotted #ff3b3f;
 }
 
 .sidenav a {
@@ -162,7 +172,6 @@ a {
 .wrapper .main-content {
   width: 85vw;
   margin-left: 15vw;
-  overflow-x: hidden;
 }
 
 .banner-image {
@@ -203,15 +212,6 @@ a {
   padding-bottom: 30vh;
 }
 
-.h2-forms {
-  border-top: 1px dotted #ff3b3f;
-  text-align: center;
-  font-size: 2.2em;
-  text-transform: uppercase;
-  margin-bottom: 3px;
-  color: #ff3b3f;
-}
-
 .contact-section {
   display: flex;
   flex-direction: column;
@@ -245,19 +245,17 @@ a {
   font-weight: 400;
 }
 .contact-section #contact {
-  border: 2px solid #ff3b3f;
+  border: 1px dotted #ff3b3f;
   border-radius: 5px;
   padding: 5px;
-  margin-left: 1rem;
   margin-bottom: 1rem;
   height: 100%;
   width: 95%;
   background-color: #fff;
 }
 .contact-section #contact-form {
-  border: 2px solid #ff3b3f;
+  border: 1px dotted #ff3b3f;
   border-radius: 5px;
-  margin-left: 1rem;
   margin-bottom: 1rem;
   padding: 5px;
   height: 100%;
@@ -281,7 +279,6 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
-  margin: 1.5rem;
   gap: 1rem;
 }
 
@@ -345,12 +342,16 @@ a {
   min-width: fit-content;
 }
 
-.scs {
+.scs,
+.about-me {
   display: flex;
   flex-direction: column;
   margin-top: 3vh;
 }
 
+.about-me .tab-1,
+.about-me .tab-2,
+.about-me .tab-3,
 .code .tab-1,
 .code .tab-2,
 .code .tab-3,
@@ -369,6 +370,9 @@ a {
   top: 0;
   margin-top: 10px;
 }
+.about-me .tab-1:hover,
+.about-me .tab-2:hover,
+.about-me .tab-3:hover,
 .code .tab-1:hover,
 .code .tab-2:hover,
 .code .tab-3:hover,
@@ -379,6 +383,9 @@ a {
   transition: 0.5s ease;
   box-shadow: 0px 0px 20px #ff3b3f;
 }
+.about-me .tab-1 h2,
+.about-me .tab-2 h2,
+.about-me .tab-3 h2,
 .code .tab-1 h2,
 .code .tab-2 h2,
 .code .tab-3 h2,
@@ -389,6 +396,9 @@ a {
   margin-bottom: 10px;
   font-size: 1.3em;
 }
+.about-me .tab-1 h3,
+.about-me .tab-2 h3,
+.about-me .tab-3 h3,
 .code .tab-1 h3,
 .code .tab-2 h3,
 .code .tab-3 h3,
@@ -399,6 +409,9 @@ a {
   margin-bottom: 10px;
   font-size: 1em;
 }
+.about-me .tab-1 p,
+.about-me .tab-2 p,
+.about-me .tab-3 p,
 .code .tab-1 p,
 .code .tab-2 p,
 .code .tab-3 p,
@@ -414,6 +427,9 @@ a {
   max-width: fit-content;
   min-width: fit-content;
 }
+.about-me .tab-1 span,
+.about-me .tab-2 span,
+.about-me .tab-3 span,
 .code .tab-1 span,
 .code .tab-2 span,
 .code .tab-3 span,
@@ -425,6 +441,9 @@ a {
   font-size: 0.8em;
   color: #ff3b3f;
 }
+.about-me .tab-1 span .tab-2 span,
+.about-me .tab-2 span .tab-2 span,
+.about-me .tab-3 span .tab-2 span,
 .code .tab-1 span .tab-2 span,
 .code .tab-2 span .tab-2 span,
 .code .tab-3 span .tab-2 span,
@@ -433,6 +452,9 @@ a {
 .scs .tab-3 span .tab-2 span {
   color: #000;
 }
+.about-me .tab-1 a,
+.about-me .tab-2 a,
+.about-me .tab-3 a,
 .code .tab-1 a,
 .code .tab-2 a,
 .code .tab-3 a,
@@ -444,6 +466,9 @@ a {
   max-width: fit-content;
   min-width: fit-content;
 }
+.about-me .tab-1 a:hover,
+.about-me .tab-2 a:hover,
+.about-me .tab-3 a:hover,
 .code .tab-1 a:hover,
 .code .tab-2 a:hover,
 .code .tab-3 a:hover,
@@ -451,6 +476,19 @@ a {
 .scs .tab-2 a:hover,
 .scs .tab-3 a:hover {
   text-decoration: underline;
+}
+
+.scs_h1,
+.card_h1,
+.h1-forms,
+.code_h1,
+.about_h1 {
+  margin: 15px 0;
+  text-align: center;
+  color: #ff3b3f;
+  text-shadow: #000 0 0 5px;
+  font-size: 600;
+  border-bottom: 1px dotted #ff3b3f;
 }
 
 input[type=text],
@@ -543,7 +581,8 @@ form h2 {
 @media (min-width: 992px) {
   .project-card,
   .code,
-  .scs {
+  .scs,
+  .about-me {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -564,6 +603,7 @@ form h2 {
     overflow: hidden;
     background-position: center;
     background-size: cover;
+    margin-bottom: 1rem;
     border-bottom: 1px solid #a9a9a9;
   }
   .contact-section {
@@ -574,10 +614,21 @@ form h2 {
     width: 30%;
     height: auto;
     text-align: left;
+    margin-right: 1rem;
   }
   .contact-section #contact-form {
     width: 50%;
     height: auto;
+  }
+}
+@media (min-width: 1px) and (max-width: 768px) {
+  input[type=text],
+  input[type=email],
+  textarea {
+    width: 90%;
+  }
+  .contact-section {
+    margin-left: -10px;
   }
 }
 

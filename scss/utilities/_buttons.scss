@@ -42,10 +42,10 @@
 }
 
 .social-media a {
-  margin: 10px;
+  margin: 5px;
   border-radius: 5px;
-  height: 35px;
-  width: 35px;
+  height: 40px;
+  width: 40px;
   display: flex;
   align-items: center;
 }
@@ -77,14 +77,14 @@
   }
 }
 
-// #tweet {
-//   color: $tweet;
-//   background-color: #f7f5f4;
-//   &:hover {
-//     background-color: $tweet;
-//     color: #fff;
-//   }
-// }
+#github {
+  color: $git;
+  background-color: #f7f5f4;
+  &:hover {
+    background-color: $git;
+    color: #fff;
+  }
+}
 
 .scroll,
 .scroll-up {
