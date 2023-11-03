@@ -2,11 +2,13 @@
 // Button styles
 // =================================================================================
 
-.sidenav i {
+.sidenav i,
+.mobile-nav i {
   margin-right: 8px;
 }
 
-.sidenav li {
+.sidenav li,
+.mobile-nav li {
   display: block;
   list-style: none;
   text-transform: uppercase;
@@ -24,7 +26,8 @@
     box-shadow: 0px 0px 20px $btn-hover;
   }
 }
-.sidenav h1:hover {
+.sidenav h1:hover,
+.mobile-nav h1:hover {
   background-color: $txt-color;
   border-radius: 30px;
   box-shadow: 0px 0px 20px $btn-hover;
@@ -109,21 +112,4 @@
 .scroll-up {
   padding-top: 0.5%;
   margin-bottom: 5px;
-}
-
-.hidden-nav {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  color: #fff;
-  height: 45px;
-  width: 45px;
-  background-color: $txt-color;
-  font-size: 2rem;
-  text-align: center;
-  border-radius: 5px;
-  cursor: pointer;
-  &:hover {
-    background-color: $btn-hover;
-  }
 }

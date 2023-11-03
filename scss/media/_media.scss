@@ -10,11 +10,20 @@
     width: 100vw;
     margin-left: 0;
   }
+  .hamburger {
+    display: flex;
+    position: absolute;
+    left: 1.5px;
+    top: 1.5px;
+  }
 }
 
 @media (min-width: 992px) {
-  .hidden-nav {
+  .hamburger {
     display: none;
+  }
+  .wrapper .sidenav {
+    width: 15vw;
   }
 }
 
@@ -35,7 +44,7 @@
   .tab-4,
   .tab-5,
   .tab-6 {
-    width: 30%;
+    width: 29%;
     gap: 1rem;
   }
   .project-img {

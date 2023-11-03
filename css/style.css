@@ -1,8 +1,10 @@
-.sidenav i {
+.sidenav i,
+.mobile-nav i {
   margin-right: 8px;
 }
 
-.sidenav li {
+.sidenav li,
+.mobile-nav li {
   display: block;
   list-style: none;
   text-transform: uppercase;
@@ -14,14 +16,16 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
-.sidenav li:hover {
+.sidenav li:hover,
+.mobile-nav li:hover {
   color: #fff;
   background-color: #ff3b3f;
   font-weight: 600;
   box-shadow: 0px 0px 20px #ff3b3f;
 }
 
-.sidenav h1:hover {
+.sidenav h1:hover,
+.mobile-nav h1:hover {
   background-color: #a9a9a9;
   border-radius: 30px;
   box-shadow: 0px 0px 20px #ff3b3f;
@@ -102,23 +106,6 @@
   margin-bottom: 5px;
 }
 
-.hidden-nav {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  color: #fff;
-  height: 45px;
-  width: 45px;
-  background-color: #a9a9a9;
-  font-size: 2rem;
-  text-align: center;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.hidden-nav:hover {
-  background-color: #ff3b3f;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -147,17 +134,34 @@ a {
   position: fixed;
   left: 0;
   top: 0;
-  width: 15vw;
+  width: auto;
   height: 100vh;
   background: #231f20;
   border-right: 1px dotted #ff3b3f;
 }
 
-.sidenav a {
+.wrapper .mobile-nav {
+  position: fixed;
+  left: 0;
+  bottom: 100%;
+  width: auto;
+  height: 100vh;
+  background: #231f20;
+  border-right: 1px dotted #ff3b3f;
+  transition: 0.4s;
+}
+
+.mobile-nav.is-active {
+  bottom: 0;
+}
+
+.sidenav a,
+.mobile-nav a {
   color: #fff;
 }
 
-.sidenav h1 {
+.sidenav h1,
+.mobile-nav h1 {
   color: #fff;
   text-align: center;
   line-height: 90px;
@@ -165,6 +169,7 @@ a {
   font-weight: 600;
   border-bottom: 1px solid white;
   margin-bottom: 50px;
+  margin-top: 65px;
   background-color: #ff3b3f;
   border-radius: 3px;
 }
@@ -177,6 +182,7 @@ a {
 .banner-image {
   display: flex;
   flex-direction: column;
+  width: auto;
   justify-content: center;
   background-color: #caebf2;
   background-blend-mode: multiply;
@@ -290,7 +296,7 @@ a {
 .project-card .tab-6 {
   display: flex;
   flex-direction: column;
-  margin: 15px;
+  margin: 1rem;
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 15px;
@@ -487,7 +493,7 @@ a {
   text-align: center;
   color: #ff3b3f;
   text-shadow: #000 0 0 5px;
-  font-size: 600;
+  font-weight: 600;
   border-bottom: 1px dotted #ff3b3f;
 }
 
@@ -564,6 +570,24 @@ form h2 {
   font-size: 600;
 }
 
+.hamburger {
+  background-color: rgb(99, 97, 96);
+  font-size: 0.8rem;
+  border-radius: 5%;
+  margin: 5px;
+  z-index: 10;
+}
+
+.hamburger.is-active:hover,
+.hamburger:hover {
+  opacity: 0.7;
+  background-color: #ff3b3f;
+}
+
+.hamburger span {
+  color: #fff;
+}
+
 @media (max-width: 991px) {
   .sidenav {
     display: none;
@@ -572,10 +596,19 @@ form h2 {
     width: 100vw;
     margin-left: 0;
   }
+  .hamburger {
+    display: flex;
+    position: absolute;
+    left: 1.5px;
+    top: 1.5px;
+  }
 }
 @media (min-width: 992px) {
-  .hidden-nav {
+  .hamburger {
     display: none;
+  }
+  .wrapper .sidenav {
+    width: 15vw;
   }
 }
 @media (min-width: 992px) {
@@ -595,7 +628,7 @@ form h2 {
   .tab-4,
   .tab-5,
   .tab-6 {
-    width: 30%;
+    width: 29%;
     gap: 1rem;
   }
   .project-img {
