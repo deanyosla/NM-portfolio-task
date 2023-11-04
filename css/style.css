@@ -584,8 +584,12 @@ form h2 {
   background-color: #ff3b3f;
 }
 
-.hamburger span {
-  color: #fff;
+.hamburger-inner,
+.hamburger-inner:after,
+.hamburger-inner:before,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #fff;
 }
 
 @media (max-width: 991px) {

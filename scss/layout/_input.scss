@@ -81,7 +81,10 @@ form h2 {
   opacity: 0.7;
   background-color: $btn-hover;
 }
-
-.hamburger span {
-  color: #fff;
+.hamburger-inner,
+.hamburger-inner:after,
+.hamburger-inner:before,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #fff;
 }
