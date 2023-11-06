@@ -25,7 +25,7 @@ hamburger.addEventListener('click', function () {
 //         });
 
 const headerTxt = "Hi, I'm Andrejs Volskis!";
-const paraTxt = 'I am an aspiring web developer.';
+const paraTxt = 'I am an aspiring Web Developer.';
 let headerSpeed = 80;
 let paraSpeed = 60;
 let headerLength = 0;

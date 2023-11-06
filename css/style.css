@@ -502,6 +502,7 @@ a {
   text-shadow: #000 0 0 5px;
   font-weight: 600;
   border-bottom: 1px dotted #de7325;
+  font-size: 1.6em;
 }
 
 input[type=text],
@@ -632,6 +633,7 @@ form h2 {
     flex-wrap: wrap;
     gap: 1rem;
     margin-top: 3vh;
+    justify-content: center;
   }
   .tab-1,
   .tab-2,
@@ -674,6 +676,16 @@ form h2 {
   }
   .contact-section {
     margin-left: -10px;
+  }
+}
+@media (min-width: 993px) {
+  .scs .tab-3 {
+    width: 800px;
+    margin-bottom: 20px;
+  }
+  .scs .tab-2,
+  .scs .tab-1 {
+    width: 385px;
   }
 }
 
