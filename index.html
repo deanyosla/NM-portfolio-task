@@ -162,7 +162,7 @@
               >View Project <i class="fa-solid fa-arrow-right"></i
             ></a>
           </div>
-          <!-- <div class="tab-4">
+          <div class="tab-4">
             <img
               class="project-img"
               src="images/img-4.jpg"
@@ -173,7 +173,8 @@
               >View Project <i class="fa-solid fa-arrow-right"></i
             ></a>
           </div>
-          <div class="tab-5">
+
+          <!-- <div class="tab-5">
             <img
               class="project-img"
               src="images/img-4.jpg"
@@ -210,16 +211,23 @@
               <a href="mailto: deanyosla@icloud.com">deanyosla@icloud.com</a>
             </h4>
           </section>
-          <section id="contact-form">
+          <section id="contact-form" onsubmit="return ValidateForm();">
             <form>
               <h2>Send me a message <i class="fa-solid fa-arrow-right"></i></h2>
               <div class="input-row">
-                <input type="text" placeholder="First Name*" required />
-                <input type="text" placeholder="Last Name*" required />
+                <input id="f-name" type="text" placeholder="First Name*" />
+
+                <input id="l-name" type="text" placeholder="Last Name*" />
               </div>
-              <input type="email" placeholder="Email Address*" required />
-              <input type="text" placeholder="Subject..." />
-              <textarea placeholder="Message..."></textarea>
+              <input id="email" type="email" placeholder="Email Address*" />
+
+              <input id="subject" type="text" placeholder="Subject..." />
+              <textarea id="msg-field" placeholder="Message..."></textarea>
+
+              <span id="f-name-error" class="error-message"></span>
+              <span id="l-name-error" class="error-message"></span>
+              <span id="email-error" class="error-message"></span>
+              <span id="msg-field-error" class="error-message"></span>
               <button class="btn-submit" type="submit">Submit</button>
             </form>
           </section>

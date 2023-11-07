@@ -45,11 +45,11 @@
   .tab-4,
   .tab-5,
   .tab-6 {
-    width: 29%;
+    width: 40%;
     gap: 1rem;
   }
   .project-img {
-    height: 280px;
+    height: 100%;
     width: 100%;
     overflow: hidden;
     background-position: center;
@@ -84,13 +84,88 @@
   }
 }
 
+@media (min-width: 500px) and (max-width: 529px) {
+  .input-row {
+    display: flex;
+    flex-direction: row;
+  }
+  #l-name {
+    margin: 5px 30px 5px 5px;
+  }
+  #f-name {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 529px) {
+  .input-row {
+    display: flex;
+    flex-direction: row;
+  }
+  #f-name {
+    margin-right: 5px;
+    width: 50%;
+  }
+  #l-name {
+    margin-left: 0;
+    margin-right: 10px;
+    width: 50%;
+  }
+  #email,
+  #subject,
+  #msg-field {
+    width: 95%;
+  }
+}
+
+@media (min-width: 590px) {
+  .input-row {
+    display: flex;
+    flex-direction: row;
+  }
+  #f-name {
+    margin-right: 5px;
+    width: 48%;
+  }
+  #l-name {
+    margin-left: 0;
+    margin-right: 10px;
+    width: 48%;
+  }
+  #email,
+  #subject,
+  #msg-field {
+    width: 97%;
+  }
+}
 @media (min-width: 993px) {
-  .scs .tab-3 {
-    width: 800px;
-    margin-bottom: 20px;
+  .scs .tab-1,
+  .code .tab-1,
+  .about-me .tab-1 {
+    width: 90%;
   }
   .scs .tab-2,
-  .scs .tab-1 {
-    width: 385px;
+  .scs .tab-3,
+  .code .tab-2,
+  .code .tab-3,
+  .about-me .tab-2,
+  .about-me .tab-3 {
+    width: 44.5%;
+  }
+  .input-row {
+    display: flex;
+    flex-direction: row;
+  }
+  #l-name {
+    margin: 5px 6px;
+    width: 46.5%;
+  }
+  #f-name {
+    width: 46.5%;
+  }
+  #email,
+  #subject,
+  #msg-field {
+    width: 95%;
   }
 }

@@ -6,23 +6,6 @@ hamburger.addEventListener('click', function () {
     menu_nav.classList.toggle("is-active");
 });
 
-// const headertxt = document.querySelector('.h1-text');
-// const characters = headertxt.innerHTML.split('');
-//       headertxt.innerHTML = '';
-//       characters.forEach((character, index) => {
-//         setTimeout(() => {
-//       headertxt.innerHTML += character;
-//   }, 100 * index);
-// });
-
-// const paragraph = document.querySelector('.p-text');
-// const chara = paragraph.innerHTML.split('');
-//         paragraph.innerHTML = '';
-//         chara.forEach((character, index) => {
-//             setTimeout(() => {
-//                 paragraph.innerHTML += character;
-//             }, 200 * index);
-//         });
 
 const headerTxt = "Hi, I'm Andrejs Volskis!";
 const paraTxt = 'I am an aspiring Web Developer.';
@@ -53,122 +36,162 @@ function typeWriter() {
 
 typeWriter();
 
-// $('.project-card').slick({
-//     arrows: false,
-//     dots: false,
-//     adaptiveHeight: true,
-//     adaptiveWidth: true,
-//     autoplay: true,
-//     autoplaySpeed: 2000,
-//     pauseOnFocus: true,
-//     slidesToShow: 1,
-//     mobileFirst: true,
-//     responsive: [
-     
-//       {
-//         breakpoint: 768,
-//         settings: {
-//           arrows: false,
-//           centerMode: true,
-//           centerPadding: '40px',
-//           slidesToShow: 2
+ // Working submission form
+
+function validateForm() {
+    const firstName = document.getElementById("f-name").value;
+    const lastName = document.getElementById("l-name").value;
+    const email = document.getElementById("email").value;
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    const message = document.getElementById("msg-field").value;
+
+    function displayErrorMessage(elementId, message) {
+        const errorElement = document.getElementById(elementId);
+        errorElement.textContent = message;
+        errorElement.style.display = "block";
+      
+        // Apply the error border class to the corresponding input field
+        const inputField = document.getElementById(elementId.replace("-error", ""));
+        inputField.classList.add("error-border");
+      }
+      
+      function clearErrorMessages() {
+        const errorElements = document.getElementsByClassName("error-message");
+        for (let i = 0; i < errorElements.length; i++) {
+          errorElements[i].textContent = "";
+          errorElements[i].style.display = "none";
+      
+          // Remove the error border class from all input fields
+          const inputField = document.getElementById(errorElements[i].id.replace("-error", ""));
+          inputField.classList.remove("error-border");
+        }
+      }
+  
+    // Clear any previous error messages and remove error borders
+    clearErrorMessages();
+  
+    let hasErrors = false;
+  
+    if (firstName === "") {
+      displayErrorMessage("f-name-error", "*First Name is required.");
+      hasErrors = true;
+    }
+  
+    if (lastName === "") {
+      displayErrorMessage("l-name-error", "*Last Name is required.");
+      hasErrors = true;
+    }
+  
+    if (email === "") {
+      displayErrorMessage("email-error", "*Email Address is required.");
+      hasErrors = true;
+    } else if (!email.match(emailPattern)) {
+      displayErrorMessage("email-error", "*Email Address is not valid.");
+      hasErrors = true;
+    }
+  
+    if (message.length < 40 ) {
+      displayErrorMessage("msg-field-error", "*Message should be at least 40 characters long.");
+      hasErrors = true;
+    }
+  
+    if (hasErrors) {
+      return false;
+    }
+    form.reset();
+    return true;
+  }
+  
+
+
+
+
+
+
+// Not working for now 
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     const form = document.getElementById("contact-form");
+//     const firstName = document.getElementById("f-name");
+//     const lastName = document.getElementById("l-name");
+//     const email = document.getElementById("email");
+//     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+//     const message = document.getElementById("msg-field");
+  
+//     form.addEventListener("submit", function (event) {
+//       event.preventDefault(); // Prevent the default form submission behavior
+  
+//       // Clear any previous error messages and remove error borders
+//       clearErrorMessages();
+  
+//       let hasErrors = false;
+  
+//       if (firstName.value === "") {
+//         displayErrorMessage("f-name-error", "*First Name is required.");
+//         addErrorBorder("f-name");
+//         hasErrors = true;
+//       }
+  
+//       if (lastName.value === "") {
+//         displayErrorMessage("l-name-error", "*Last Name is required.");
+//         addErrorBorder("l-name");
+//         hasErrors = true;
+//       }
+  
+//       if (email.value === "") {
+//         displayErrorMessage("email-error", "*Email Address is required.");
+//         addErrorBorder("email");
+//         hasErrors = true;
+//       } else if (!email.value.match(emailPattern)) {
+//         displayErrorMessage("email-error", "*Email Address is not valid.");
+//         addErrorBorder("email");
+//         hasErrors = true;
+//       }
+  
+//       if (message.value.length < 40 ) {
+//         displayErrorMessage("msg-field-error", "*Message should be at least 40 characters long.");
+//         addErrorBorder("msg-field");
+//         hasErrors = true;
+//       }
+  
+//       if (hasErrors) {
+//         return;
+//       }
+//       function displayErrorMessage(elementId, message) {
+//         const errorElement = document.getElementById(elementId + "-error");
+//         errorElement.textContent = message;
+//         errorElement.style.display = "block";
+//       }
+    
+//       function addErrorBorder(inputId) {
+//         const inputField = document.getElementById(inputId);
+//         inputField.classList.add("error-border");
+//       }
+    
+//       function clearErrorMessages() {
+//         const errorElements = document.getElementsByClassName("error-message");
+//         for (let i = 0; i < errorElements.length; i++) {
+//           errorElements[i].textContent = "";
+//           errorElements[i].style.display = "none";
 //         }
-//       },
-//       {
-//         breakpoint: 480,
-//         settings: {
-//           arrows: false,
-//           centerMode: true,
-//           centerPadding: '40px',
-//           slidesToShow: 1
-//         }
-//       },
-//       {
-//         breakpoint: 1200,
-//         settings: {
-//             arrows: false,
-//             dots: true,
-//             adaptiveHeight: true,
-//             adaptiveWidth: true,
-//             slidesToShow: 3,
-//             slidesToScroll: 1
+    
+//         const inputFields = document.querySelectorAll(".input-row input");
+//         for (let i = 0; i < inputFields.length; i++) {
+//           inputFields[i].classList.remove("error-border");
 //         }
 //       }
-//     ]
-//   });
-
-// // character counter vars 
-// let textArea = document.getElementById('message');
-// let characterCounter = document.getElementById('char-count');
-
-// //form vars
-
-// const emailFormat = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-// const email = document.getElementById('email');
-
-// //counter function 
-
-// const countCharacters = () => {
-//     let numberOfEnteredChars = textArea.value.length;
-//     let counter = numberOfEnteredChars;
-//     if(numberOfEnteredChars <= 40) {
-//         characterCounter.textContent = counter + '/40';
-//         characterCounter.style.color = 'red';
-//     } else {
-//         characterCounter.textContent = counter + '/40';
-//         characterCounter.style.color = '#24d36e';
-//     }
-//     (this).addEventListener("submit", function(){
-//         characterCounter.textContent = '';
-//     });
-// };
-
-// textArea.addEventListener("input", countCharacters);
-
-// // form function 
-
-// function validateForm() {
-//     let fields = [document.getElementById('fname'), 
-//                     document.getElementById('lname'),
-//                     document.getElementById('email'),
-//                     document.getElementById('subject'),
-//                     document.getElementById('message')
-//                     ];
-
-//     let err = 0;
-//     for (var i = 0; i < fields.length; i++) {
-//         if(fields[i].value == "") {
-//             err++
-//             fields[i].style.border = '1px solid red';
-//             fields[i].style.boxShadow = '0 0 20px red';
-//         } else {
-//             fields[i].style.boxShadow = '';
-//             fields[i].style.border = '';
-//         }
-//     }
-
     
-//     if(!emailFormat.test(email.value)) {
-//         err + 1;
-//         fields[2].style.border = '1px solid red';
-//         fields[2].style.boxShadow = '0 0 20px red';
-//         return false;
-//     } else {
-//         fields[2].style.border = '';
-//         fields[2].style.boxShadow = '';
-//     }
-
-//     if (err === 0) {
-//         // success.innerHTML = 'Submit Successful';
-//         success.style.color = '#24d36e';
-//         console.log('form success');
-//     } else {
-//         success.innerHTML = 'Fill Out Form Correctly';
-//         success.style.color = 'red';
-//         console.log('form failed');
-//         return false;
-//     }
-
-//     return true;
-// }
-
+//       function clearFormFields() {
+//         form.reset();
+//       }
+//       // If there are no errors, submit the form programmatically
+//       form.submit();
+  
+//       // Clear the form fields
+//       clearFormFields();
+//     });
+//   });
+  
+  
+ 
+  
