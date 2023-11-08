@@ -188,12 +188,13 @@
     margin-top: 5px;
     padding: 20px;
     color: $btn-hover;
-    white-space: nowrap;
+    text-align: left;
     max-width: fit-content;
     min-width: fit-content;
   }
   img {
     white-space: nowrap;
+    min-width: 300px;
   }
   a {
     white-space: nowrap;

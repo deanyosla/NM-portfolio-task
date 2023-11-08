@@ -331,7 +331,7 @@ a {
   margin-top: 5px;
   padding: 20px;
   color: #de7325;
-  white-space: nowrap;
+  text-align: left;
   max-width: fit-content;
   min-width: fit-content;
 }
@@ -342,6 +342,7 @@ a {
 .project-card .tab-5 img,
 .project-card .tab-6 img {
   white-space: nowrap;
+  min-width: 300px;
 }
 .project-card .tab-1 a,
 .project-card .tab-2 a,
