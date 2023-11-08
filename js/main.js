@@ -61,13 +61,21 @@ document.addEventListener("DOMContentLoaded", function () {
           displayErrorMessage("f-name-error", "*First Name is required.");
           addErrorBorder("f-name");
           hasErrors = true;
+      } else if (!/^[a-zA-Z]+$/.test(firstName.value)) {
+        displayErrorMessage("f-name-error", "*First Name can only contain letters.");
+        addErrorBorder("f-name");
+        hasErrors = true;
       }
 
       if (lastName.value === "") {
           displayErrorMessage("l-name-error", "*Last Name is required.");
           addErrorBorder("l-name");
           hasErrors = true;
-      }
+      } else if (!/^[a-zA-Z]+$/.test(lastName.value)) {
+        displayErrorMessage("l-name-error", "*Last Name can only contain letters.");
+        addErrorBorder("l-name");
+        hasErrors = true;
+    }
      
       if (email.value === "") {
           displayErrorMessage("email-error", "*Email Address is required.");
@@ -78,8 +86,15 @@ document.addEventListener("DOMContentLoaded", function () {
           addErrorBorder("email");
           hasErrors = true;
       }
+      // Check the message length and content
+      const messageValue = message.value.trim();
+      const messageLength = messageValue.length;
 
-      if (message.value.length < 40) {
+      if (messageLength === 0 || /^\s+$/.test(messageValue)) {
+          displayErrorMessage("msg-field-error", "*Message cannot be empty or contain only spaces.");
+          addErrorBorder("msg-field");
+          hasErrors = true;
+      } else if (messageLength < 40) {
           displayErrorMessage("msg-field-error", "*Message should be at least 40 characters long.");
           addErrorBorder("msg-field");
           hasErrors = true;
