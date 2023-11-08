@@ -254,15 +254,6 @@
     min-width: fit-content;
   }
 
-  span {
-    margin-left: 20px;
-    white-space: wrap;
-    font-size: 0.8em;
-    color: $btn-hover;
-    .tab-2 span {
-      color: #000;
-    }
-  }
   a {
     color: #000;
     white-space: nowrap;
@@ -271,6 +262,16 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+
+.tab-3 span {
+  margin-left: 20px;
+  white-space: wrap;
+  font-size: 0.8em;
+  color: $btn-hover;
+  .tab-2 span {
+    color: #000;
   }
 }
 
@@ -285,4 +286,10 @@
   font-weight: $bold-txt;
   border-bottom: 1px dotted $btn-hover;
   font-size: 1.6em;
+}
+
+.code-snippet code {
+  overflow: scroll;
+  height: fit-content;
+  height: 300px;
 }

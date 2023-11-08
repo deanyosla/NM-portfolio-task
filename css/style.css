@@ -440,31 +440,6 @@ a {
   max-width: fit-content;
   min-width: fit-content;
 }
-.about-me .tab-1 span,
-.about-me .tab-2 span,
-.about-me .tab-3 span,
-.code .tab-1 span,
-.code .tab-2 span,
-.code .tab-3 span,
-.scs .tab-1 span,
-.scs .tab-2 span,
-.scs .tab-3 span {
-  margin-left: 20px;
-  white-space: wrap;
-  font-size: 0.8em;
-  color: #de7325;
-}
-.about-me .tab-1 span .tab-2 span,
-.about-me .tab-2 span .tab-2 span,
-.about-me .tab-3 span .tab-2 span,
-.code .tab-1 span .tab-2 span,
-.code .tab-2 span .tab-2 span,
-.code .tab-3 span .tab-2 span,
-.scs .tab-1 span .tab-2 span,
-.scs .tab-2 span .tab-2 span,
-.scs .tab-3 span .tab-2 span {
-  color: #000;
-}
 .about-me .tab-1 a,
 .about-me .tab-2 a,
 .about-me .tab-3 a,
@@ -491,6 +466,16 @@ a {
   text-decoration: underline;
 }
 
+.tab-3 span {
+  margin-left: 20px;
+  white-space: wrap;
+  font-size: 0.8em;
+  color: #de7325;
+}
+.tab-3 span .tab-2 span {
+  color: #000;
+}
+
 .scs_h1,
 .card_h1,
 .h1-forms,
@@ -502,6 +487,12 @@ a {
   font-weight: 600;
   border-bottom: 1px dotted #de7325;
   font-size: 1.6em;
+}
+
+.code-snippet code {
+  overflow: scroll;
+  height: fit-content;
+  height: 300px;
 }
 
 input[type=text],
