@@ -46,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const lastName = document.getElementById("l-name");
   const email = document.getElementById("email");
   const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+  const subject = document.getElementById("subject");
   const message = document.getElementById("msg-field");
 
   form.addEventListener("submit", function (event) {
@@ -67,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
           addErrorBorder("l-name");
           hasErrors = true;
       }
-
+     
       if (email.value === "") {
           displayErrorMessage("email-error", "*Email Address is required.");
           addErrorBorder("email");
@@ -83,8 +84,13 @@ document.addEventListener("DOMContentLoaded", function () {
           addErrorBorder("msg-field");
           hasErrors = true;
       }
-
-      if (hasErrors) {
+      
+      if (subject.value === "") {
+        addErrorBorder("subject");
+        hasErrors = true;
+      }
+     
+     if (hasErrors) {
           return;
       }
 
@@ -110,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
           errorElements[i].style.display = "none";
       }
 
-      const inputFields = document.querySelectorAll("input, #msg-field");
+      const inputFields = document.querySelectorAll("input, #subject, #msg-field");
       for (let i = 0; i < inputFields.length; i++) {
           inputFields[i].classList.remove("error-border");
       }
