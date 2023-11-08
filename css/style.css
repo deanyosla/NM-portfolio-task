@@ -504,16 +504,6 @@ a {
   font-size: 1.6em;
 }
 
-.error-message {
-  color: red;
-  font-size: 13px;
-  margin: 5px 20px;
-}
-
-.error-border {
-  border: 3px solid red;
-}
-
 input[type=text],
 input[type=email] {
   width: 95%;
@@ -528,6 +518,16 @@ input[type=email] {
 input[type=text]:focus,
 input[type=email]:focus {
   box-shadow: 0px 0px 20px #de7325;
+}
+
+.error-message {
+  color: red;
+  font-size: 13px;
+  margin: 5px 20px;
+}
+
+.error-border {
+  border: 3px solid red !important;
 }
 
 ::placeholder {
