@@ -684,6 +684,11 @@ form h2 {
     height: auto;
   }
 }
+@media (min-width: 1200px) {
+  #contact {
+    width: 25% !important;
+  }
+}
 @media (min-width: 1px) and (max-width: 768px) {
   input[type=text],
   input[type=email],
