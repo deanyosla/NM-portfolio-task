@@ -6,11 +6,9 @@
 .mobile-nav i {
   margin-right: 8px;
 }
-
-.sidenav li,
-.mobile-nav li {
+.sidenav a,
+.mobile-nav a {
   display: block;
-  list-style: none;
   text-transform: uppercase;
   font-weight: $med-txt;
   color: $btn-regular;
@@ -26,10 +24,34 @@
     box-shadow: 0px 0px 20px $btn-hover;
   }
 }
+.sidenav .index,
+.mobile-nav .index {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+// .sidenav li,
+// .mobile-nav li {
+//   display: block;
+//   list-style: none;
+//   text-transform: uppercase;
+//   font-weight: $med-txt;
+//   color: $btn-regular;
+//   padding: 15px;
+//   margin: 5px 0;
+//   background-color: rgb(99, 97, 96);
+//   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+//   border-top: 1px solid rgba(255, 255, 255, 0.1);
+//   &:hover {
+//     color: #fff;
+//     background-color: $btn-hover;
+//     font-weight: $bold-txt;
+//     box-shadow: 0px 0px 20px $btn-hover;
+//   }
+// }
 .sidenav h1:hover,
 .mobile-nav h1:hover {
   background-color: $txt-color;
-  border-radius: 30px;
   box-shadow: 0px 0px 20px $btn-hover;
   color: $btn-hover;
 }
@@ -49,7 +71,6 @@
   margin: 5px;
   border-radius: 5px;
   height: 40px;
-  width: 40px;
   display: flex;
   align-items: center;
 }
@@ -63,30 +84,31 @@
 //   }
 // }
 
-#li-ico {
-  color: $li-in;
-  background-color: #f7f5f4;
+.li-ico {
+  color: $li-in !important;
+  background-color: #f7f5f4 !important;
+  text-align: center;
   &:hover {
-    background-color: $li-in;
-    color: #fff;
+    background-color: $li-in !important;
+    color: #fff !important;
   }
 }
 
-#insta {
-  color: $insta;
-  background-color: #f7f5f4;
+.insta {
+  color: $insta !important;
+  background-color: #f7f5f4 !important;
   &:hover {
-    background-color: $insta;
-    color: #fff;
+    background-color: $insta !important;
+    color: #fff !important;
   }
 }
 
-#github {
-  color: $git;
-  background-color: #f7f5f4;
+.github {
+  color: $git !important;
+  background-color: #f7f5f4 !important;
   &:hover {
-    background-color: $git;
-    color: #fff;
+    background-color: $git !important;
+    color: #fff !important;
   }
 }
 

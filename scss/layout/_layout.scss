@@ -23,6 +23,7 @@
   border-right: 1px dotted $btn-hover;
   transition: 0.4s;
   z-index: 9;
+  overflow: scroll;
 }
 .mobile-nav.is-active {
   bottom: 0;
@@ -129,6 +130,7 @@
     height: 100%;
     width: 95%;
     background-color: #fff;
+    margin-left: 15px;
   }
   #contact-form {
     border: 1px dotted $btn-hover;
@@ -138,6 +140,7 @@
     height: 100%;
     width: 95%;
     background-color: #fff;
+    margin-left: 15px;
   }
 }
 
@@ -167,14 +170,11 @@
 .project-card .tab-6 {
   display: flex;
   flex-direction: column;
-  // min-width: 400px;
-  // max-width: 40%;
-  // height: 450px;
-  margin: 1rem;
+  margin: 0.5rem;
   background-color: #fff;
   border: 1px solid #ccc;
-  border-radius: 15px;
-  padding: 20px;
+  border-radius: 10px;
+  padding: 10px;
   box-shadow: -7px 5px 10px $txt-white;
   position: relative;
   transition: 0.5s ease;
@@ -186,7 +186,7 @@
   }
   p {
     margin-top: 5px;
-    padding: 20px;
+    padding: 10px;
     color: $btn-hover;
     text-align: left;
     max-width: fit-content;
@@ -194,13 +194,20 @@
   }
   img {
     white-space: nowrap;
-    min-width: 300px;
   }
   a {
     white-space: nowrap;
     max-width: fit-content;
     min-width: fit-content;
   }
+}
+.tab-1 .code-icons {
+  display: flex;
+  font-size: 1.75rem;
+  gap: 10px;
+  margin-left: 10px;
+  flex-direction: row;
+  color: $btn-hover;
 }
 .scs,
 .about-me,
