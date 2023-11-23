@@ -95,7 +95,7 @@
 
 .contact-section {
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 40px;
@@ -131,7 +131,6 @@
     height: 100%;
     width: 95%;
     background-color: #fff;
-    margin-left: 15px;
   }
   #contact-form {
     border: 1px dotted $btn-hover;
@@ -141,7 +140,14 @@
     height: 100%;
     width: 95%;
     background-color: #fff;
-    margin-left: 15px;
+  }
+  .input-rowTwo,
+  .input-row {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 0 0.5rem;
   }
 }
 
@@ -301,4 +307,13 @@
   overflow: scroll;
   height: fit-content;
   height: 300px;
+}
+
+.t-house {
+  display: flex;
+  column-gap: 0.5rem;
+  color: $btn-hover;
+  text-align: left;
+  margin-left: 1rem;
+  font-weight: $bold-txt;
 }

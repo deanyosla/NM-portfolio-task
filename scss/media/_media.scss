@@ -63,7 +63,7 @@
       width: 30%;
       height: auto;
       text-align: left;
-      margin-right: 1rem;
+      margin-right: 0.5rem;
     }
     #contact-form {
       width: 50%;
@@ -77,70 +77,26 @@
   }
 }
 
-@media (min-width: 1px) and (max-width: 768px) {
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 93%;
-    margin: 5px 9px 2px 14px;
+@media (min-width: 768px) {
+  .input-row {
+    display: flex !important;
+    flex-direction: row !important;
+    column-gap: 0.5rem !important;
   }
+  #f-name {
+    flex: 1;
+  }
+  #l-name {
+    flex: 1;
+  }
+}
+
+@media (min-width: 820px) and (max-width: 911px) {
   .contact-section {
-    margin-left: -10px;
-  }
-}
-
-@media (min-width: 500px) and (max-width: 529px) {
-  .input-row {
-    display: flex;
-    flex-direction: row;
-  }
-  #l-name {
-    margin: 4px 22px 5px 5px;
-  }
-  #f-name {
-    margin-right: 0;
-  }
-}
-
-@media (min-width: 529px) {
-  .input-row {
-    display: flex;
-    flex-direction: row;
-  }
-  #f-name {
-    margin-right: 5px;
-    width: 50%;
-  }
-  #l-name {
-    margin-left: 0;
-    margin-right: 10px;
-    width: 50%;
-  }
-  #email,
-  #subject,
-  #msg-field {
-    width: 95%;
-  }
-}
-
-@media (min-width: 590px) {
-  .input-row {
-    display: flex;
-    flex-direction: row;
-  }
-  #f-name {
-    margin-right: 5px;
-    width: 48%;
-  }
-  #l-name {
-    margin-left: 0;
-    margin-right: 15px;
-    width: 48%;
-  }
-  #email,
-  #subject,
-  #msg-field {
-    width: 97%;
+    #contact-form,
+    #contact {
+      margin-left: 15px;
+    }
   }
 }
 @media (min-width: 993px) {
@@ -156,21 +112,5 @@
   .about-me .tab-2,
   .about-me .tab-3 {
     width: 44.5%;
-  }
-  .input-row {
-    display: flex;
-    flex-direction: row;
-  }
-  #l-name {
-    margin: 5px 6px;
-    width: 46.5%;
-  }
-  #f-name {
-    width: 46.5%;
-  }
-  #email,
-  #subject,
-  #msg-field {
-    width: 95%;
   }
 }

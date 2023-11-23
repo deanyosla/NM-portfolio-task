@@ -30,25 +30,6 @@
   margin: 0;
   border: none;
 }
-// .sidenav li,
-// .mobile-nav li {
-//   display: block;
-//   list-style: none;
-//   text-transform: uppercase;
-//   font-weight: $med-txt;
-//   color: $btn-regular;
-//   padding: 15px;
-//   margin: 5px 0;
-//   background-color: rgb(99, 97, 96);
-//   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-//   border-top: 1px solid rgba(255, 255, 255, 0.1);
-//   &:hover {
-//     color: #fff;
-//     background-color: $btn-hover;
-//     font-weight: $bold-txt;
-//     box-shadow: 0px 0px 20px $btn-hover;
-//   }
-// }
 .sidenav h1:hover,
 .mobile-nav h1:hover {
   background-color: $txt-color;
@@ -74,7 +55,6 @@
   display: flex;
   align-items: center;
 }
-
 // #fb-ico {
 //   color: $fb;
 //   background-color: #f7f5f4;
@@ -83,7 +63,6 @@
 //     color: #fff;
 //   }
 // }
-
 .li-ico {
   color: $li-in !important;
   background-color: #f7f5f4 !important;

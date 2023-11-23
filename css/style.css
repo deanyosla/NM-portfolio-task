@@ -121,7 +121,7 @@
 
 body {
   font-family: Poppins, sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 0.4px;
   overflow-x: hidden;
   background-color: #d3d2ce;
 }
@@ -145,7 +145,7 @@ a {
   width: auto;
   min-width: calc(15vw + 20px);
   height: 100vh;
-  background: #241d1b;
+  background: #240600;
   border-right: 1px dotted #de7325;
   box-sizing: border-box;
 }
@@ -156,7 +156,7 @@ a {
   bottom: 100%;
   width: auto;
   height: 100vh;
-  background: #241d1b;
+  background: #240600;
   border-right: 1px dotted #de7325;
   transition: 0.4s;
   z-index: 9;
@@ -233,7 +233,6 @@ a {
 
 .contact-section {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 40px;
@@ -271,7 +270,6 @@ a {
   height: 100%;
   width: 95%;
   background-color: #fff;
-  margin-left: 15px;
 }
 .contact-section #contact-form {
   border: 1px dotted #de7325;
@@ -281,7 +279,14 @@ a {
   height: 100%;
   width: 95%;
   background-color: #fff;
-  margin-left: 15px;
+}
+.contact-section .input-rowTwo,
+.contact-section .input-row {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0 0.5rem;
 }
 
 .project-img {
@@ -513,16 +518,24 @@ a {
   height: 300px;
 }
 
+.t-house {
+  display: flex;
+  column-gap: 0.5rem;
+  color: #de7325;
+  text-align: left;
+  margin-left: 1rem;
+  font-weight: 600;
+}
+
 input[type=text],
 input[type=email] {
-  width: 95%;
+  width: 100%;
   background-color: #fff;
-  margin: 5px 14px 5px 10px;
   border-radius: 3px;
-  padding: 0 5px;
   height: 50px;
   outline: none;
   border: 2px #d3d2ce solid;
+  column-gap: 0.7rem;
 }
 input[type=text]:focus,
 input[type=email]:focus {
@@ -550,10 +563,8 @@ input[type=email]:focus {
 textarea {
   resize: none;
   background-color: #fff;
-  width: 95%;
-  margin: 5px 20px 5px 10px;
+  width: 100%;
   border-radius: 5px;
-  padding: 0 5px;
   height: 150px;
   border: 2px #d3d2ce solid;
   outline: none;
@@ -593,7 +604,7 @@ form h2 {
   text-transform: uppercase;
   padding: 15px;
   color: #de7325;
-  font-size: 600;
+  font-weight: 600;
 }
 
 .hamburger {
@@ -678,7 +689,7 @@ form h2 {
     width: 30%;
     height: auto;
     text-align: left;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
   }
   .contact-section #contact-form {
     width: 50%;
@@ -690,67 +701,23 @@ form h2 {
     width: 25% !important;
   }
 }
-@media (min-width: 1px) and (max-width: 768px) {
-  input[type=text],
-  input[type=email],
-  textarea {
-    width: 93%;
-    margin: 5px 9px 2px 14px;
-  }
-  .contact-section {
-    margin-left: -10px;
-  }
-}
-@media (min-width: 500px) and (max-width: 529px) {
+@media (min-width: 768px) {
   .input-row {
-    display: flex;
-    flex-direction: row;
-  }
-  #l-name {
-    margin: 4px 22px 5px 5px;
+    display: flex !important;
+    flex-direction: row !important;
+    column-gap: 0.5rem !important;
   }
   #f-name {
-    margin-right: 0;
-  }
-}
-@media (min-width: 529px) {
-  .input-row {
-    display: flex;
-    flex-direction: row;
-  }
-  #f-name {
-    margin-right: 5px;
-    width: 50%;
+    flex: 1;
   }
   #l-name {
-    margin-left: 0;
-    margin-right: 10px;
-    width: 50%;
-  }
-  #email,
-  #subject,
-  #msg-field {
-    width: 95%;
+    flex: 1;
   }
 }
-@media (min-width: 590px) {
-  .input-row {
-    display: flex;
-    flex-direction: row;
-  }
-  #f-name {
-    margin-right: 5px;
-    width: 48%;
-  }
-  #l-name {
-    margin-left: 0;
-    margin-right: 15px;
-    width: 48%;
-  }
-  #email,
-  #subject,
-  #msg-field {
-    width: 97%;
+@media (min-width: 820px) and (max-width: 911px) {
+  .contact-section #contact-form,
+  .contact-section #contact {
+    margin-left: 15px;
   }
 }
 @media (min-width: 993px) {
@@ -766,22 +733,6 @@ form h2 {
   .about-me .tab-2,
   .about-me .tab-3 {
     width: 44.5%;
-  }
-  .input-row {
-    display: flex;
-    flex-direction: row;
-  }
-  #l-name {
-    margin: 5px 6px;
-    width: 46.5%;
-  }
-  #f-name {
-    width: 46.5%;
-  }
-  #email,
-  #subject,
-  #msg-field {
-    width: 95%;
   }
 }
 
