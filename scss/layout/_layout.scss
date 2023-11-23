@@ -11,6 +11,7 @@
   height: 100vh;
   background: $dark-bg;
   border-right: 1px dotted $btn-hover;
+  box-sizing: border-box;
 }
 
 .wrapper .mobile-nav {
@@ -50,7 +51,7 @@
 
 .wrapper .main-content {
   width: 85vw;
-  margin-left: 15vw;
+  margin-left: calc(15vw + 20px);
   float: right;
 }
 
