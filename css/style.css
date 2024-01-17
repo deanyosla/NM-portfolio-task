@@ -368,7 +368,10 @@ a {
   min-width: fit-content;
 }
 
-.tab-1 .code-icons {
+.tab-1 .code-icons,
+.tab-2 .code-icons,
+.tab-3 .code-icons,
+.tab-4 .code-icons {
   display: flex;
   font-size: 1.75rem;
   gap: 10px;
