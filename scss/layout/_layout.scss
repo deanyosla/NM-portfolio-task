@@ -24,7 +24,7 @@
   border-right: 1px dotted $btn-hover;
   transition: 0.4s;
   z-index: 9;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 .mobile-nav.is-active {
   bottom: 0;
@@ -152,12 +152,20 @@
 }
 
 .project-img {
-  max-width: 100%;
-  max-height: 60%;
+  display: flex;
+  align-self: center;
+  max-width: 550px;
+  max-height: 340px;
   background-position: center;
   background-size: cover;
   border-radius: 5px;
   border-bottom: 1px solid $txt-color;
+}
+@media (min-width: 1px) and (max-width: 600px) {
+  .project-img {
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
 .project-card {
   width: 90%;
