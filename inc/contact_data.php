@@ -16,7 +16,6 @@ function postData($firstName, $lastName, $email, $subject, $message)
             $sql->bindValue(":message", $message, PDO::PARAM_STR);
 
             $sql->execute();
-            echo $sql->queryString;
             return true;
         }
         catch (PDOException $e)

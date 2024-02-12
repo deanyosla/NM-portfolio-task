@@ -1,5 +1,5 @@
 <?php
-    include("inc/contact_data.php");
+    include("contact_data.php");
     
     if (!isset($_SESSION['success']))
     {
@@ -41,19 +41,19 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST")
     {
         $firstName = sanatiseInput($_POST['first_name']);
-        $_SESSION['first_name'] = $firstName;
+        $_SESSION['first_name'] = $fName;
 
         $lastName = sanatiseInput($_POST['last_name']);
-        $_SESSION['last_name'] = $lastName;
+        $_SESSION['last_name'] = $lName;
 
         $email = sanatiseInput($_POST['email']);
-        $_SESSION['email'] = $email;
+        $_SESSION['email'] = $eMail;
 
         $subject = sanatiseInput($_POST['subject']);
-        $_SESSION['subject'] = $subject;
+        $_SESSION['subject'] = $subjectTest;
 
         $message = sanatiseInput($_POST['message']);
-        $_SESSION['message'] = $message;
+        $_SESSION['message'] = $messageTest;
         
         $nameRegex = "/^[a-zA-Z-' ]*$/";
         $phoneRegex = "/^\+?\(?([0-9]{2,4})[)\s\d.-]+([0-9]{3,4})([\s.-]+([0-9]{3,4}))?$/";

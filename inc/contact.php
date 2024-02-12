@@ -13,7 +13,7 @@
             </h4>
           </section>
           <section id="contact-form">
-            <form action="index.php#contact" method="POST">
+            <form action="index.php#contact" method="post">
               <h2>Send me a message <i class="fa-solid fa-arrow-right"></i></h2>
               <div class="input-row">
                 <input id="first_name" name="first_name" type="text" value="<?php echo $_SESSION['first_name'] ?? ''; ?>" placeholder="First Name*">
@@ -28,6 +28,7 @@
               <div>
                 <button class="btn-submit" type="submit" action="index.php#contact">Submit</button>
               </div>
+              <?php include ("inc/form_val.php"); ?>
               <span id="first_name_error" class="error-message"></span>
               <span id="last_name_error" class="error-message"></span>
               <span id="email_error" class="error-message"></span>

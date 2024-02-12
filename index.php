@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<?php include ("inc/form_val.php"); ?>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -52,6 +51,7 @@
         <!-- contact section --> 
         <h1 class="h1-forms">Contact Me</h1>
         <?php include ("inc/contact.php"); ?>
+        <?php include ("inc/form_val.php"); ?>
         <div class="scroll-up">
           <i class="fa-solid fa-chevron-up"></i><a href="#main">back to top</a>
         </div>
