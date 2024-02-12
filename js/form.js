@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form");
-    const firstName = document.getElementById("f-name");
-    const lastName = document.getElementById("l-name");
+    const firstName = document.getElementById("first_name");
+    const lastName = document.getElementById("last_name");
     const email = document.getElementById("email");
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     const subject = document.getElementById("subject");
-    const message = document.getElementById("msg-field");
+    const message = document.getElementById("message");
   
     form.addEventListener("submit", function (event) {
         event.preventDefault(); // Prevents the default form submission behavior
@@ -16,31 +16,31 @@ document.addEventListener("DOMContentLoaded", function () {
         let hasErrors = false;
   
         if (firstName.value === "") {
-            displayErrorMessage("f-name-error", "First Name is required.");
-            addErrorBorder("f-name");
+            displayErrorMessage("first_name_error", "First Name is required.");
+            addErrorBorder("first_name");
             hasErrors = true;
         } else if (!/^[a-zA-Z]+$/.test(firstName.value)) {
-          displayErrorMessage("f-name-error", "First Name can only contain letters.");
-          addErrorBorder("f-name");
+          displayErrorMessage("first_name_error", "First Name can only contain letters.");
+          addErrorBorder("first_name");
           hasErrors = true;
         }
   
         if (lastName.value === "") {
-            displayErrorMessage("l-name-error", "Last Name is required.");
-            addErrorBorder("l-name");
+            displayErrorMessage("last_name_error", "Last Name is required.");
+            addErrorBorder("last_name");
             hasErrors = true;
         } else if (!/^[a-zA-Z]+$/.test(lastName.value)) {
-          displayErrorMessage("l-name-error", "Last Name can only contain letters.");
-          addErrorBorder("l-name");
+          displayErrorMessage("last_name_error", "Last Name can only contain letters.");
+          addErrorBorder("last_name");
           hasErrors = true;
       }
        
         if (email.value === "") {
-            displayErrorMessage("email-error", "Email Address is required.");
+            displayErrorMessage("email_error", "Email Address is required.");
             addErrorBorder("email");
             hasErrors = true;
         } else if (!email.value.match(emailPattern)) {
-            displayErrorMessage("email-error", "Email Address is not valid.");
+            displayErrorMessage("email_error", "Email Address is not valid.");
             addErrorBorder("email");
             hasErrors = true;
         }
@@ -49,12 +49,12 @@ document.addEventListener("DOMContentLoaded", function () {
         const messageLength = messageValue.length;
   
         if (messageLength === 0 || /^\s+$/.test(messageValue)) {
-            displayErrorMessage("msg-field-error", "Message cannot be empty or contain only spaces.");
-            addErrorBorder("msg-field");
+            displayErrorMessage("message_error", "Message cannot be empty or contain only spaces.");
+            addErrorBorder("message");
             hasErrors = true;
         } else if (messageLength < 40) {
-            displayErrorMessage("msg-field-error", "Message should be at least 40 characters long.");
-            addErrorBorder("msg-field");
+            displayErrorMessage("message_error", "Message should be at least 40 characters long.");
+            addErrorBorder("message");
             hasErrors = true;
         }
         
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
             errorElements[i].style.display = "none";
         }
   
-        const inputFields = document.querySelectorAll("input, #subject, #msg-field");
+        const inputFields = document.querySelectorAll("input, #subject, #message");
         for (let i = 0; i < inputFields.length; i++) {
             inputFields[i].classList.remove("error-border");
         }

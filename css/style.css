@@ -746,10 +746,10 @@ form h2 {
     flex-direction: row !important;
     column-gap: 0.5rem !important;
   }
-  #f-name {
+  #first_name {
     flex: 1;
   }
-  #l-name {
+  #last_name {
     flex: 1;
   }
 }
