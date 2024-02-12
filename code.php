@@ -24,93 +24,11 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="sidenav">
-        <a class="index" href="index.html"><h1>AV</h1></a>
-        <a href="about-me.html#about">
-          <i class="fa-solid fa-address-card"></i>
-          About Me
-        </a>
-        <a href="index.html#portfolio"
-          ><i class="fa-solid fa-folder-open"></i> My Portfolio
-        </a>
-        <a href="code.html">
-          <i class="fa-solid fa-code"> </i> Coding Examples
-        </a>
-
-        <a href="scs.html">
-          <i class="fa-solid fa-graduation-cap"></i> SCS Scheme
-        </a>
-
-        <a href="index.html#contact">
-          <i class="fa-solid fa-mobile-screen"></i> &nbsp;Contact Me
-        </a>
-
-        <div class="social-media">
-          <!-- <a href="#" id="fb-ico"><i class="fa-brands fa-facebook-f"></i></a> -->
-          <a
-            href="https://www.linkedin.com/in/andrejs-volskis-32751b160/"
-            class="li-ico"
-            target="_blank"
-            ><i class="fa-brands fa-linkedin-in"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/art_of_andyw/"
-            class="insta"
-            target="_blank"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-          <a href="https://github.com/deanyosla/" target="_blank" class="github"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-        </div>
-      </div>
+       <!-- side navigation -->
+       <?php include ("inc/sidenav.php"); ?>
       <!-- mobile nav  -->
-      <button class="hamburger" type="button">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
-      <div class="mobile-nav">
-        <a class="index" href="index.html"><h1>AV</h1></a>
-        <a href="about-me.html#about">
-          <i class="fa-solid fa-address-card"></i>
-          About Me
-        </a>
-        <a href="index.html#portfolio">
-          <i class="fa-solid fa-folder-open"></i> My Portfolio
-        </a>
-
-        <a href="code.html">
-          <i class="fa-solid fa-code"> </i> Coding Examples
-        </a>
-
-        <a href="scs.html">
-          <i class="fa-solid fa-graduation-cap"></i> SCS Scheme
-        </a>
-
-        <a href="index.html#contact">
-          <i class="fa-solid fa-mobile-screen"></i> &nbsp;Contact Me
-        </a>
-
-        <div class="social-media">
-          <!-- <a href="#" id="fb-ico"><i class="fa-brands fa-facebook-f"></i></a> -->
-          <a
-            href="https://www.linkedin.com/in/andrejs-volskis-32751b160/"
-            class="li-ico"
-            target="_blank"
-            ><i class="fa-brands fa-linkedin-in"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/art_of_andyw/"
-            class="insta"
-            target="_blank"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-          <a href="https://github.com/deanyosla/" target="_blank" class="github"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-        </div>
-      </div>
+      <?php include ("inc/burger.php"); ?>
+      <!-- main content -->
       <div class="main-content">
         <div
           class="banner-image banner-secondary"
@@ -122,82 +40,9 @@
           </div>
         </div>
         <h1 class="code_h1">My Coding Examples</h1>
-        <div id="code" class="code container">
-          <div class="tab-1">
-            <div class="code-snippet">
-              <pre>
-                  <code>
-document.addEventListener(&quot;DOMContentLoaded&quot;, function () {
-const form = document.querySelector(&quot;form&quot;);
-const firstName = document.getElementById(&quot;f-name&quot;);
-const lastName = document.getElementById(&quot;l-name&quot;);
-
-                    
-form.addEventListener(&quot;submit&quot;, function (event) {
-event.preventDefault(); // Prevents the default form submission behavior
-
-// Clears any previous error messages and removes error borders
-      clearErrorMessages();
-
-      let hasErrors = false;
-
-if (firstName.value === &quot;&quot;) {
-     displayErrorMessage(&quot;f-name-error&quot;, &quot;*First Name is required.&quot;);
-     addErrorBorder(&quot;f-name&quot;);
-     hasErrors = true;
-     } else if (!/^[a-zA-Z]+$/.test(firstName.value)) {
-        displayErrorMessage(&quot;f-name-error&quot;, &quot;*First Name can only contain letters.&quot;);
-        addErrorBorder(&quot;f-name&quot;);
-             hasErrors = true;
-     }
-                    
-if (lastName.value === &quot;&quot;) {
-     displayErrorMessage(&quot;l-name-error&quot;, &quot;*Last Name is required.&quot;);
-     addErrorBorder(&quot;l-name&quot;);
-     hasErrors = true;
-     } else if (!/^[a-zA-Z]+$/.test(lastName.value)) {
-       displayErrorMessage(&quot;l-name-error&quot;, &quot;*Last Name can only contain letters.&quot;);
-       addErrorBorder(&quot;l-name&quot;);
-            hasErrors = true;
-      }
-      if (hasErrors) {
-        return;
-    }
-
-    form.reset();
-    });
- });
-                  </code>
-              </pre>
-            </div>
-          </div>
-          <div class="tab-2">
-            <h2>Form Validation</h2>
-            <p>
-              I have created the following function using JavaScript. Which was
-              used on the contact form to display error messages if a user were
-              to enter a number or a symbol in both name input fields. <br />
-              <br />
-              <strong>IF</strong> function first looks if the name is strictly
-              equal to an empty string, then it adds error message underneath
-              the input fields and a red border to the input field. <br />
-              <br />
-              <strong>IF ELSE</strong> shows an error if anything other than
-              letters are typed in.
-            </p>
-          </div>
-          <div class="tab-3">
-            <h2>Formatting of following code</h2>
-            <p>
-              To help me with the right formatting of the embedded code at the
-              top I have used a JavaScript plugin, which helps with formatting
-              to give it an effect as if it's written in code editing software.
-              Otherwise I'd have to select every element and give each of those
-              a class to change the colour and that would be time consuming.
-            </p>
-          </div>
-        </div>
-      </div>
+        <!-- coding examples -->
+        <?php include ("inc/codes.php"); ?>
+        <!-- end of main content -->
     </div>
     <script src="js/jquery/jquery-3.7.1.min.js"></script>
     <script src="js/main.js"></script>

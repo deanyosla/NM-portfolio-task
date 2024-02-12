@@ -20,95 +20,11 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="sidenav">
-        <a class="index" href="index.html"><h1>AV</h1></a>
-        <a href="about-me.html#about">
-          <i class="fa-solid fa-address-card"></i>
-          About Me
-        </a>
-        <a href="index.html#portfolio"
-          ><i class="fa-solid fa-folder-open"></i> My Portfolio
-        </a>
-        <a href="code.html">
-          <i class="fa-solid fa-code"> </i> Coding Examples
-        </a>
-
-        <a href="scs.html">
-          <i class="fa-solid fa-graduation-cap"></i> SCS Scheme
-        </a>
-
-        <a href="index.html#contact">
-          <i class="fa-solid fa-mobile-screen"></i> &nbsp;Contact Me
-        </a>
-
-        <div class="social-media">
-          <!-- <a href="#" id="fb-ico"><i class="fa-brands fa-facebook-f"></i></a> -->
-          <a
-            href="https://www.linkedin.com/in/andrejs-volskis-32751b160/"
-            class="li-ico"
-            target="_blank"
-            ><i class="fa-brands fa-linkedin-in"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/art_of_andyw/"
-            class="insta"
-            target="_blank"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-          <a href="https://github.com/deanyosla/" target="_blank" class="github"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-        </div>
-      </div>
+      <!-- side navigation -->
+      <?php include ("inc/sidenav.php"); ?>
       <!-- mobile nav  -->
-      <button class="hamburger" type="button">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
-      <div class="mobile-nav">
-        <a class="index" href="index.html"><h1>AV</h1></a>
-        <a href="about-me.html#about">
-          <i class="fa-solid fa-address-card"></i>
-          About Me
-        </a>
-
-        <a href="index.html#portfolio">
-          <i class="fa-solid fa-folder-open"></i> My Portfolio
-        </a>
-
-        <a href="code.html">
-          <i class="fa-solid fa-code"> </i> Coding Examples
-        </a>
-
-        <a href="scs.html">
-          <i class="fa-solid fa-graduation-cap"></i> SCS Scheme
-        </a>
-
-        <a href="index.html#contact">
-          <i class="fa-solid fa-mobile-screen"></i> &nbsp;Contact Me
-        </a>
-
-        <div class="social-media">
-          <!-- <a href="#" id="fb-ico"><i class="fa-brands fa-facebook-f"></i></a> -->
-          <a
-            href="https://www.linkedin.com/in/andrejs-volskis-32751b160/"
-            class="li-ico"
-            target="_blank"
-            ><i class="fa-brands fa-linkedin-in"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/art_of_andyw/"
-            class="insta"
-            target="_blank"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-          <a href="https://github.com/deanyosla/" target="_blank" class="github"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-        </div>
-      </div>
-
+      <?php include ("inc/burger.php"); ?>
+      <!-- main content -->
       <div class="main-content">
         <div
           class="banner-image banner-secondary"
@@ -120,45 +36,11 @@
           </div>
         </div>
         <h1 class="about_h1">About Me</h1>
-        <div id="about" class="about-me container">
-          <div class="tab-1">
-            <h2>About</h2>
-            <p>
-              I am a creative person, throughout my life I have been intrigued
-              by and interested in various art subjects.<br />
-              Though personally I lean towards visual arts, be it painting,
-              drawing or even digital design.<br />
-              It always draws me in, even now it's one of my longest running
-              hobbies which I can't see myself abandoning ever.
-            </p>
-          </div>
-          <div class="tab-2">
-            <h2>Interests</h2>
-            <p>
-              When it's a possibility I love to travel, and have visited some
-              wonderful places across the Europe for now.<br />
-              Haven't been further than that yet, although I do hope to be able
-              to travel further eventually.<br />
-              It's always exciting to experience cultures different to ours or
-              even socialise with people I've not met before on those travels.
-            </p>
-          </div>
-          <div class="tab-3">
-            <h2>Coding Experience</h2>
-            <p>
-              Prior to joining Netmatters Scion Scheme course I can't say that I
-              had known a whole lot about coding.<br />
-              Other than that it exists and I have tried to self-educate myself
-              in some form of Web Development before, albeit not very
-              successfully.<br />
-              For the short time that I've been part of this course I have
-              managed to learn more than I thought I was capable of.<br />
-              And I'm looking forward to learn even more as I progress through
-              the course.
-            </p>
-          </div>
-        </div>
+        <!-- about me -->
+        <?php include ("inc/about.php"); ?>
+        <!-- end of about me -->
       </div>
+      <!-- end of main content -->
     </div>
 
     <script src="js/jquery/jquery-3.7.1.min.js"></script>

@@ -563,6 +563,7 @@ input[type=email] {
   width: 100%;
   background-color: #fff;
   border-radius: 3px;
+  padding: 10px;
   height: 50px;
   outline: none;
   border: 2px #d3d2ce solid;
@@ -574,9 +575,17 @@ input[type=email]:focus {
 }
 
 .error-message {
-  color: red;
+  display: none;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  width: 85%;
+  border-radius: 3px;
+  padding: 5px 10px;
   font-size: 13px;
-  margin: 5px 20px;
+  margin: 5px auto;
+  border: solid 2px #d76d6d;
+  background-color: #d76d6d;
 }
 
 .error-border {
@@ -586,17 +595,16 @@ input[type=email]:focus {
 ::placeholder {
   color: #de7325;
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   opacity: 1;
-  padding: 5px;
 }
 
 textarea {
-  resize: none;
   background-color: #fff;
   width: 100%;
-  border-radius: 5px;
-  height: 150px;
+  border-radius: 3px;
+  padding: 10px;
+  height: 120px;
   border: 2px #d3d2ce solid;
   outline: none;
 }

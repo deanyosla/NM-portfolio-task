@@ -16,31 +16,31 @@ document.addEventListener("DOMContentLoaded", function () {
         let hasErrors = false;
   
         if (firstName.value === "") {
-            displayErrorMessage("f-name-error", "*First Name is required.");
+            displayErrorMessage("f-name-error", "First Name is required.");
             addErrorBorder("f-name");
             hasErrors = true;
         } else if (!/^[a-zA-Z]+$/.test(firstName.value)) {
-          displayErrorMessage("f-name-error", "*First Name can only contain letters.");
+          displayErrorMessage("f-name-error", "First Name can only contain letters.");
           addErrorBorder("f-name");
           hasErrors = true;
         }
   
         if (lastName.value === "") {
-            displayErrorMessage("l-name-error", "*Last Name is required.");
+            displayErrorMessage("l-name-error", "Last Name is required.");
             addErrorBorder("l-name");
             hasErrors = true;
         } else if (!/^[a-zA-Z]+$/.test(lastName.value)) {
-          displayErrorMessage("l-name-error", "*Last Name can only contain letters.");
+          displayErrorMessage("l-name-error", "Last Name can only contain letters.");
           addErrorBorder("l-name");
           hasErrors = true;
       }
        
         if (email.value === "") {
-            displayErrorMessage("email-error", "*Email Address is required.");
+            displayErrorMessage("email-error", "Email Address is required.");
             addErrorBorder("email");
             hasErrors = true;
         } else if (!email.value.match(emailPattern)) {
-            displayErrorMessage("email-error", "*Email Address is not valid.");
+            displayErrorMessage("email-error", "Email Address is not valid.");
             addErrorBorder("email");
             hasErrors = true;
         }
@@ -49,11 +49,11 @@ document.addEventListener("DOMContentLoaded", function () {
         const messageLength = messageValue.length;
   
         if (messageLength === 0 || /^\s+$/.test(messageValue)) {
-            displayErrorMessage("msg-field-error", "*Message cannot be empty or contain only spaces.");
+            displayErrorMessage("msg-field-error", "Message cannot be empty or contain only spaces.");
             addErrorBorder("msg-field");
             hasErrors = true;
         } else if (messageLength < 40) {
-            displayErrorMessage("msg-field-error", "*Message should be at least 40 characters long.");
+            displayErrorMessage("msg-field-error", "Message should be at least 40 characters long.");
             addErrorBorder("msg-field");
             hasErrors = true;
         }
