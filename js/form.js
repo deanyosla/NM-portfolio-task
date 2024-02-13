@@ -1,97 +1,174 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector("form");
-    const firstName = document.getElementById("first_name");
-    const lastName = document.getElementById("last_name");
-    const email = document.getElementById("email");
-    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-    const subject = document.getElementById("subject");
-    const message = document.getElementById("message");
-  
-    form.addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevents the default form submission behavior
-  
-        // Clears any previous error messages and removes error borders
-        clearErrorMessages();
-  
-        let hasErrors = false;
-  
-        if (firstName.value === "") {
-            displayErrorMessage("first_name_error", "First Name is required.");
-            addErrorBorder("first_name");
-            hasErrors = true;
-        } else if (!/^[a-zA-Z]+$/.test(firstName.value)) {
-          displayErrorMessage("first_name_error", "First Name can only contain letters.");
-          addErrorBorder("first_name");
-          hasErrors = true;
-        }
-  
-        if (lastName.value === "") {
-            displayErrorMessage("last_name_error", "Last Name is required.");
-            addErrorBorder("last_name");
-            hasErrors = true;
-        } else if (!/^[a-zA-Z]+$/.test(lastName.value)) {
-          displayErrorMessage("last_name_error", "Last Name can only contain letters.");
-          addErrorBorder("last_name");
-          hasErrors = true;
-      }
-       
-        if (email.value === "") {
-            displayErrorMessage("email_error", "Email Address is required.");
-            addErrorBorder("email");
-            hasErrors = true;
-        } else if (!email.value.match(emailPattern)) {
-            displayErrorMessage("email_error", "Email Address is not valid.");
-            addErrorBorder("email");
-            hasErrors = true;
-        }
-        // Check the message length and content
-        const messageValue = message.value.trim();
-        const messageLength = messageValue.length;
-  
-        if (messageLength === 0 || /^\s+$/.test(messageValue)) {
-            displayErrorMessage("message_error", "Message cannot be empty or contain only spaces.");
-            addErrorBorder("message");
-            hasErrors = true;
-        } else if (messageLength < 40) {
-            displayErrorMessage("message_error", "Message should be at least 40 characters long.");
-            addErrorBorder("message");
-            hasErrors = true;
-        }
-        
-        if (subject.value === "") {
-          addErrorBorder("subject");
-          hasErrors = true;
-        }
-       
-       if (hasErrors) {
-            return;
-        }
-  
-        // Resets the form
-        form.reset();
-    });
-  
-    function displayErrorMessage(elementId, message) {
-        const errorElement = document.getElementById(elementId);
-        errorElement.textContent = message;
-        errorElement.style.display = "block";
+const firstName = document.querySelector("#first_name");
+const lastName = document.querySelector("#last_name");
+const emailElement = document.querySelector("#email");
+const subjectElement = document.querySelector("#subject");
+const messageElement = document.querySelector("#message");
+const btnClose = document.querySelector(".close");
+
+const errorValidation = document.querySelector(".alert-fail");
+const successValidation = document.querySelector(".alert-success");
+
+const form = document.querySelector("#contact-form");
+
+const isRequired = value => value === "" ? false : true; 
+const isNameValid = (name) => {
+    const regex = /^[A-Za-z\s-]+$/;
+    return regex.test(name);
+}
+
+const isEmailValid = (email) => {
+    const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return regex.test(email);
+}
+
+const isPhoneValid = (number) => {
+    
+    
+    const  regex = /^\+?\(?([0-9]{2,4})[)\s\d.-]+([0-9]{3,4})([\s.-]+([0-9]{3,4}))?$/
+
+    return regex.test(number);
+}
+
+const showError = (input) => {
+    const formField = input.parentElement;
+    
+    formField.classList.remove("success");
+    formField.classList.add("error");
+}
+
+const showSuccess = (input) => {
+    const formField = input.parentElement;
+
+    formField.classList.remove("error");
+    formField.classList.add("success");
+}
+
+const checkFirstName = () => {
+    let valid = false;
+
+    const first_name = firstName.value;
+
+    if (!isRequired(first_name) || !isNameValid(first_name))
+    {
+        showError(firstName)
     }
-  
-    function addErrorBorder(inputId) {
-        const inputField = document.getElementById(inputId);
-        inputField.classList.add("error-border");
+    else
+    {
+        showSuccess(firstName);
+        valid = true;
     }
-  
-    function clearErrorMessages() {
-        const errorElements = document.getElementsByClassName("error-message");
-        for (let i = 0; i < errorElements.length; i++) {
-            errorElements[i].textContent = "";
-            errorElements[i].style.display = "none";
-        }
-  
-        const inputFields = document.querySelectorAll("input, #subject, #message");
-        for (let i = 0; i < inputFields.length; i++) {
-            inputFields[i].classList.remove("error-border");
-        }
+
+    return valid;
+}
+const checkLastName = () => {
+    let valid = false;
+
+    const last_name = lastName.value;
+
+    if (!isRequired(last_name) || !isNameValid(last_name))
+    {
+        showError(lastName)
     }
-  });
+    else
+    {
+        showSuccess(lastName);
+        valid = true;
+    }
+
+    return valid;
+}
+
+const checkMessage = () => {
+    let valid = false;
+
+    const message = messageElement.value;
+
+    if (!isRequired(message))
+    {
+        showError(messageElement);
+    }
+    else
+    {
+        showSuccess(messageElement);
+        valid = true;
+    }
+
+    return valid;
+}
+
+const checkEmail = () => {
+    let valid = false;
+
+    const email = emailElement.value.trim();
+    console.log(email);
+
+    
+    if (!isEmailValid(email))
+    {
+        showError(emailElement);
+    }
+    else
+    {
+        showSuccess(emailElement);
+        valid = true;
+    }
+
+    return valid;
+}
+
+const checkSubject = () => {
+    let valid = false;
+
+    const subject = subjectElement.value;
+
+    if (!isRequired(subject))
+    {
+        showError(subjectElement);
+    }
+    else
+    {
+        showSuccess(subjectElement);
+        valid = true;
+    }
+
+    return valid;
+}
+
+btnClose.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    if (errorValidation != null)
+    {
+        e.target.closest('div.alert-fail').remove();
+    }
+    
+    if (successValidation != null)
+    {
+        e.target.closest('div.alert-success').remove();
+    }
+    
+});
+
+form.addEventListener("input", function (e){
+    switch (e.target.id)
+    {
+        case "first_name":
+             checkFirstName();
+             break;
+        case "last_name":
+              checkLastName();
+              break;
+
+        case "email":
+             checkEmail();
+             break;
+
+        case "subject":
+             checkSubject();
+             break;
+
+        case "message":
+             checkMessage();
+             break;
+    }
+});

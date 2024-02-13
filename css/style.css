@@ -574,22 +574,59 @@ input[type=email]:focus {
   box-shadow: 0px 0px 20px #de7325;
 }
 
-.error-message {
+.alert-wrap .alert-hidden {
   display: none;
-  justify-content: center;
-  color: #fff;
+}
+.alert-wrap .alert-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.alert-wrap .alert-fail {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #f2dede;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.close {
+  position: relative;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  color: #000;
   font-weight: 600;
-  width: 85%;
-  border-radius: 3px;
-  padding: 5px 10px;
-  font-size: 13px;
-  margin: 5px auto;
-  border: solid 2px #d76d6d;
-  background-color: #d76d6d;
+  font-size: 0.9rem;
+  opacity: 0.2;
+  text-shadow: 0 1px 0 #fff;
+}
+.close:hover {
+  opacity: 0.5;
+}
+
+.error input {
+  border-color: #d76d6d;
+}
+.error input:focus {
+  border-color: #d76d6d;
 }
 
 .error-border {
-  border: 3px solid red !important;
+  border: 2px solid #d76d6d !important;
 }
 
 ::placeholder {
