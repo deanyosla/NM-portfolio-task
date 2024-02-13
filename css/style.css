@@ -366,7 +366,7 @@ a {
 .project-card .tab-6:hover {
   top: -5px;
   transition: 0.5s ease;
-  box-shadow: -7px 5px 10px #de7325;
+  box-shadow: 1px 1px 20px #de7325;
 }
 .project-card .tab-1 p,
 .project-card .tab-2 p,
