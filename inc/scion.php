@@ -23,7 +23,9 @@
             </p>
           </div>
           <div class="tab-2">
+            <img class="logo" src="images/icons/treehouse-icon.png" alt="Treehouse logo">
             <h2>Treehouse</h2>
+            
             <p>
               Treehouse is an online learning community, featuring videos
               covering a number of topics from basic HTML to C# programming, iOS
@@ -37,11 +39,12 @@
               <a
                 href="https://teamtreehouse.com/profiles/andrejsvolskis"
                 target="_blank"
-                >7,885 points</a
+                >14,023 points</a
               ></span
             >
           </div>
           <div class="tab-3">
+          <img class="logo" src="images/icons/netmatters.png" alt="Netmatters logo">
             <h2>About Netmatters</h2>
             <h3>Established in 2008</h3>
             <span>Norfolk's leading technology company</span>
@@ -56,5 +59,8 @@
             <span>Operate to strict company values</span>
           </div>
         </div>
+        <div class="scroll-up">
+          <i class="fa-solid fa-chevron-up"></i><a href="#main">back to top</a>
+        </div>
       </div>
-    </div>
+ 

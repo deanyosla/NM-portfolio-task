@@ -161,6 +161,9 @@
   border-radius: 5px;
   border-bottom: 1px solid $txt-color;
 }
+.tab-2 .project-img {
+  max-height: 290px;
+}
 @media (min-width: 1px) and (max-width: 600px) {
   .project-img {
     max-width: 100%;
@@ -293,7 +296,12 @@
     }
   }
 }
-
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-left: 1.5rem;
+  margin-bottom: -1rem;
+}
 .tab-3 span {
   margin-left: 20px;
   white-space: wrap;
@@ -303,7 +311,25 @@
     color: #000;
   }
 }
-
+.info_tab_one h4,
+.info_tab_two h4,
+.info_tab_three h4 {
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+      text-decoration: underline;
+  }
+}
+.content-container,
+.content-container-two,
+.content-container-three {
+  display: none;
+}
+.content-container.show,
+.content-container-two.show,
+.content-container-three.show {
+  display: block;  
+}
 .scs_h1,
 .card_h1,
 .h1-forms,

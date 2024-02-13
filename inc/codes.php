@@ -73,4 +73,3 @@ if (lastName.value === &quot;&quot;) {
             </p>
           </div>
         </div>
-</div>

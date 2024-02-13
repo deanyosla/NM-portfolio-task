@@ -42,8 +42,12 @@
         <h1 class="code_h1">My Coding Examples</h1>
         <!-- coding examples -->
         <?php include ("inc/codes.php"); ?>
-        <!-- end of main content -->
+        <div class="scroll-up">
+          <i class="fa-solid fa-chevron-up"></i><a href="#main">back to top</a>
+        </div>
     </div>
+      <!-- end of main content -->
+   </div>
     <script src="js/jquery/jquery-3.7.1.min.js"></script>
     <script src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>

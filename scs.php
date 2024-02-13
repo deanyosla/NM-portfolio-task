@@ -27,6 +27,7 @@
       <!-- main content -->
       <!-- scion scheme section -->
       <?php include ("inc/scion.php"); ?>
+    </div>
       <!-- end of main content -->
     <script src="js/jquery/jquery-3.7.1.min.js"></script>
     <script src="js/main.js"></script>
