@@ -16,20 +16,6 @@ input[type="email"] {
     box-shadow: 0px 0px 20px $btn-hover;
   }
 }
-
-// .error-message {
-//   display: none;
-//   justify-content: center;
-//   color: #fff;
-//   font-weight: $bold-txt;
-//   width: 85%;
-//   border-radius: 3px;
-//   padding: 5px 10px;
-//   font-size: 13px;
-//   margin: 5px auto;
-//   border: solid 2px #d76d6d;
-//   background-color: #d76d6d;
-// }
 .alert-wrap {
   .alert-hidden {
     display: none;
@@ -123,7 +109,7 @@ textarea {
   &:hover {
     color: #fff;
     background-color: $btn-hover;
-    font-weight: $bold-txt;
+    font-weight: $med-txt;
     box-shadow: 0px 0px 20px $btn-hover;
   }
 }

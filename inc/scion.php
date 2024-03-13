@@ -31,17 +31,8 @@
               covering a number of topics from basic HTML to C# programming, iOS
               development, data analysis, and more. By completing courses users
               can earn points, allowing them to track their progress and see how
-              much they?ve covered in certain areas.
+              much they've covered in certain areas.
             </p>
-
-            <span class="t-house">
-              Total Score
-              <a
-                href="https://teamtreehouse.com/profiles/andrejsvolskis"
-                target="_blank"
-                >14,023 points</a
-              ></span
-            >
           </div>
           <div class="tab-3">
           <img class="logo" src="images/icons/netmatters.png" alt="Netmatters logo">
