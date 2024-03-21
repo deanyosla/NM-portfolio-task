@@ -40,6 +40,7 @@
                                                    ?>">
                                         <span><?php if($_SESSION['form_sent'] == true) {
                                                 echo 'Your Enquiry has been Submitted';
+                                                $_SESSION['form_sent'] = false;
                                                 } else {
                                                   echo implode("<br><br>",$_SESSION['errorMessage']);
                                                                 $_SESSION['errorMessage'] = [];
