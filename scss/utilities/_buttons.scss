@@ -20,8 +20,8 @@
   &:hover {
     color: #fff;
     background-color: $btn-hover;
-    font-weight: $bold-txt;
-    box-shadow: 0px 0px 20px $btn-hover;
+    font-weight: $med-txt;
+    box-shadow: 0px 0px 3px $btn-hover;
   }
 }
 .sidenav .index,
@@ -33,7 +33,7 @@
 .sidenav h1:hover,
 .mobile-nav h1:hover {
   background-color: $txt-color;
-  box-shadow: 0px 0px 20px $btn-hover;
+  box-shadow: 0px 0px 3px $btn-hover;
   color: $btn-hover;
 }
 .social-media {
@@ -55,14 +55,6 @@
   display: flex;
   align-items: center;
 }
-// #fb-ico {
-//   color: $fb;
-//   background-color: #f7f5f4;
-//   &:hover {
-//     background-color: $fb;
-//     color: #fff;
-//   }
-// }
 .li-ico {
   color: $li-in !important;
   background-color: #f7f5f4 !important;

@@ -39,7 +39,11 @@
         <!-- about me -->
         <?php include ("inc/about.php"); ?>
         <!-- end of about me -->
+        <div class="scroll-up">
+          <i class="fa-solid fa-chevron-up"></i><a href="#main">back to top</a>
+        </div>
       </div>
+      
       <!-- end of main content -->     
     </div>
     <script src="js/jquery/jquery-3.7.1.min.js"></script>

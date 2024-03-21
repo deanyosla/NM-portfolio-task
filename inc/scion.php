@@ -32,6 +32,8 @@
               development, data analysis, and more. By completing courses users
               can earn points, allowing them to track their progress and see how
               much they've covered in certain areas.
+<br><br>Treehouse's extensive library of courses caters to learners of all levels, from beginners looking to acquire foundational skills to seasoned professionals seeking to expand their expertise.
+<br><br> The platform's structured curriculum and hands-on approach empower users to learn at their own pace, with access to interactive quizzes and coding challenges.
             </p>
           </div>
           <div class="tab-3">

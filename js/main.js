@@ -39,7 +39,7 @@ function typeWriter() {
 typeWriter();
 
 
-// Accordion for project cards to show up on click
+//Accordion for project cards to show up on click
 document.querySelector(".info_tab_one h4").addEventListener("click", function () {
     document.querySelector(".content-container").classList.toggle("show");
 });
@@ -54,9 +54,3 @@ document.querySelector(".info_tab_three h4").addEventListener("click", function 
 document.querySelector(".info_tab_four h4").addEventListener("click", function () {
     document.querySelector(".content-container-four").classList.toggle("show");
 });
-
-
-  
-
- 
-  

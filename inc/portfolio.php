@@ -82,7 +82,7 @@
                 </span>
             <a href="http://js-array.andrejs-volskis.netmatters-scs.co.uk/" class="project-btn"
               >View Project <i class="fa-solid fa-arrow-right"></i
-            ></a>
+            ></a> 
           </div>
           <div class="tab-4">
             <img

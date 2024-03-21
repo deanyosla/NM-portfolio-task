@@ -195,10 +195,12 @@ form.addEventListener("input", function (e){
           <div class="tab-3">
             <h2>Formatting of code examples</h2>
             <p>
-              To help me with the right formatting of the embedded code at the
-              top I have used a <strong>Highlight.js</strong> plugin, which helps with formatting
-              to give it an effect as if it's written in code editing software.
-              As I believe it looks much nicer to the eyes. 
+            To help me with the right formatting of the embedded code at the top, I have used a <strong>Highlight.js</strong> plugin, which helps with formatting to give it an effect as if it's written in code editing software.
+            <br><br>This plugin automatically detects the language of the code and applies appropriate syntax highlighting, making it easier to read and understand.
+            Additionally, it allows customization of themes and styles to suit individual preferences,
+            enhancing the visual appeal and clarity of the code snippets presented on the webpage.
+            <br><br>By integrating <strong>Highlight.js</strong> into my coding workflow,
+            I ensure that the code snippets within my projects maintain a professional and polished appearance.
             </p>
           </div>
 

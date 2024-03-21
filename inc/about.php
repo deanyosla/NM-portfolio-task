@@ -2,37 +2,25 @@
           <div class="tab-1">
             <h2>About</h2>
             <p>
-              I am a creative person, throughout my life I have been intrigued
-              by and interested in various art subjects.<br />
-              Though personally I lean towards visual arts, be it painting,
-              drawing or even digital design.<br />
-              It always draws me in, even now it's one of my longest running
-              hobbies which I can't see myself abandoning ever.
+            I've always been a creative person, drawn to different forms of art. While I enjoy many types, I have a special love for drawing. There's something about putting pencil to paper that speaks to me deeply. Whether it's sketching a scene or doodling ideas, drawing lets me express myself in a way that feels natural and fulfilling.
+<br><br>I'm also into digital painting. The way I can create artwork on a screen opens up endless possibilities. It's like painting but with technology, and it's just as exciting for me.
+<br><br>Art has been a hobby of mine for as long as I can remember, and I can't imagine ever giving it up. It's a way for me to unwind, explore my imagination, and share a piece of myself with the world. No matter what life throws my way, I know I'll always find comfort and joy in the act of creating art.
             </p>
           </div>
           <div class="tab-2">
             <h2>Interests</h2>
             <p>
-              When it's a possibility I love to travel, and have visited some
-              wonderful places across the Europe for now.<br />
-              Haven't been further than that yet, although I do hope to be able
-              to travel further eventually.<br />
-              It's always exciting to experience cultures different to ours or
-              even socialise with people I've not met before on those travels.
+            Traveling across Europe has been an enriching experience, allowing me to explore stunning landmarks and immerse myself in diverse landscapes. While my adventures have yet to extend beyond Europe, I eagerly anticipate the opportunity to discover new destinations in the future.
+<br><br>My travels are primarily focused on sightseeing, as I find solace and inspiration in exploring historical sites, picturesque landscapes, and architectural wonders. Each journey fuels my curiosity and appreciation for the beauty of our world, leaving me with lasting memories and a sense of awe.
+<br><br>Through my explorations, I continue to gain a deeper understanding of different cultures and histories, broadening my perspective and enriching my appreciation for the intricacies of our global community.
             </p>
           </div>
           <div class="tab-3">
             <h2>Coding Experience</h2>
             <p>
-              Prior to joining Netmatters Scion Scheme course I can't say that I
-              had known a whole lot about coding.<br />
-              Other than that it exists and I have tried to self-educate myself
-              in some form of Web Development before, albeit not very
-              successfully.<br />
-              For the short time that I've been part of this course I have
-              managed to learn more than I thought I was capable of.<br />
-              And I'm looking forward to learn even more as I progress through
-              the course.
+            Before enrolling in the Netmatters Scion Scheme course, my exposure to coding was limited. While I was aware of its existence, my attempts at self-education in web development were met with limited success.
+<br><br>Since joining this course, however, I have experienced significant growth in my understanding and proficiency. In a relatively short period, I've surpassed my initial expectations, acquiring a breadth of knowledge and skills that have equipped me to navigate the complexities of coding with confidence.
+<br><br>As I continue to progress through the course, I am eager to further expand my expertise and deepen my understanding of web development. I am committed to leveraging this opportunity to cultivate a robust foundation in coding, positioning myself for continued success in the field.
             </p>
           </div>
  </div>

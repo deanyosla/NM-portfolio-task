@@ -10,7 +10,6 @@
   min-width: calc(15vw + 20px);
   height: 100vh;
   background: $dark-bg;
-  border-right: 1px dotted $btn-hover;
   box-sizing: border-box;
 }
 
@@ -42,10 +41,9 @@
   line-height: 90px;
   font-size: 50px;
   font-weight: $bold-txt;
-  border-bottom: 1px solid white;
   margin-bottom: 50px;
   margin-top: 65px;
-  background-color: $btn-hover;
+  background: $btn-hover;
   border-radius: 3px;
 }
 
