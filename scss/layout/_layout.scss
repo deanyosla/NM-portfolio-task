@@ -313,7 +313,8 @@
 }
 .info_tab_one h4,
 .info_tab_two h4,
-.info_tab_three h4 {
+.info_tab_three h4,
+.info_tab_four h4 {
   text-decoration: none;
   cursor: pointer;
   &:hover {
@@ -322,12 +323,14 @@
 }
 .content-container,
 .content-container-two,
-.content-container-three {
+.content-container-three,
+.content-container-four {
   display: none;
 }
 .content-container.show,
 .content-container-two.show,
-.content-container-three.show {
+.content-container-three.show,
+.content-container-four.show {
   display: block;  
 }
 .scs_h1,

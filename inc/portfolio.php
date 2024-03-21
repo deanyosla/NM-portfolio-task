@@ -86,14 +86,30 @@
           </div>
           <div class="tab-4">
             <img
-              class="project-img"
-              src="images/img-4.jpg"
-              alt="Placeholder image for a project"
-            />
-            <p>Coming soon...</p>
-            <!-- <a href="#" class="project-btn"
-              >View Project <i class="fa-solid fa-arrow-right"></i
-            ></a> -->
+            class="project-img"
+            src="images/laravel/laravel_main.png"
+            alt="Laravel Assessment - Company Dashboard"
+          />
+          <div class="info_tab_four">
+                        <h4>Click here for more information<i class="fa-solid fa-chevron-down"></i></h4>
+                        <div class="content-container-four">
+                        <p>
+                        The Company Dashboard is a comprehensive web application designed to manage companies and their employees efficiently. Users can register and log in securely to access the dashboard's features. The dashboard provides CRUD (Create, Read, Update, Delete) operations for both companies and employees, allowing users to add, view, edit, and delete company and employee records seamlessly.
+                        </p>
+                      </div>
+              </div>
+          
+          <span class="code-icons">
+            <i class="fa-brands fa-laravel"></i>
+            <i class="fa-brands fa-php"></i>
+            <i class="fa-brands fa-node-js"></i>
+          </span>
+          <a
+            href="https://github.com/deanyosla/laravel_app"
+            class="project-btn"
+            target="_blank"
+            >View Project <i class="fa-solid fa-arrow-right"></i
+          ></a>
           </div>
 
           <!-- <div class="tab-5">
