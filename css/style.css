@@ -655,11 +655,8 @@ input[type=email]:focus {
   opacity: 0.5;
 }
 
-.error input {
-  border-color: #d76d6d;
-}
-.error input:focus {
-  border-color: #d76d6d;
+.error {
+  border-color: #d76d6d !important;
 }
 
 .error-border {

@@ -30,14 +30,14 @@ const isPhoneValid = (number) => {
 }
 
 const showError = (input) => {
-    const formField = input.parentElement;
+    const formField = input;
     
     formField.classList.remove("success");
     formField.classList.add("error");
 }
 
 const showSuccess = (input) => {
-    const formField = input.parentElement;
+    const formField = input;
 
     formField.classList.remove("error");
     formField.classList.add("success");

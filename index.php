@@ -62,11 +62,11 @@ include("inc/contact_data.php");
         $nameRegex = "/^[a-zA-Z-' ]*$/";
         $phoneRegex = "/^\+?\(?([0-9]{2,4})[)\s\d.-]+([0-9]{3,4})([\s.-]+([0-9]{3,4}))?$/";
 
-        $isFirstNameValid = validateInput($firstName, "First Name", preg_match($nameRegex, $firstName));
-        $isLastNameValid = validateInput($lastName, "Last Name", preg_match($nameRegex, $lastName));
-        $isEmailValid = validateInput($email, "Email", filter_var($email, FILTER_VALIDATE_EMAIL));
-        $isSubjectValid = validateInput($subject, "Subject");
-        $isMessageValid = validateInput($message, "Message", 500);
+        $isFirstNameValid = validateInput($firstName, "First Name", preg_match($nameRegex, $firstName), 100);
+        $isLastNameValid = validateInput($lastName, "Last Name", preg_match($nameRegex, $lastName), 100);
+        $isEmailValid = validateInput($email, "Email", filter_var($email, FILTER_VALIDATE_EMAIL), 200);
+        $isSubjectValid = validateInput($subject, "Subject", true, 200);
+        $isMessageValid = validateInput($message, "Message", true, 500);
 
         if ($isFirstNameValid && $isLastNameValid && $isEmailValid && $isSubjectValid && $isMessageValid)
         {

@@ -65,11 +65,8 @@ input[type="email"] {
 
 
  
-.error input {
-  border-color: #d76d6d;
-  &:focus {
-      border-color:  #d76d6d;
-  }
+.error {
+  border-color: #d76d6d !important;
 } 
 .error-border {
   border: 2px solid #d76d6d !important;
