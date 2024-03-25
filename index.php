@@ -19,11 +19,16 @@ include("inc/contact_data.php");
         return $input;
     }
 
-    function validateInput($postData, $input, $regex=true)
+    function validateInput($postData, $input, $regex = true, $maxLength = null)
     {
         if (empty($postData) == true)
         {
             array_push($_SESSION['errorMessage'], "Please enter a value into " . $input . ".");
+            return false;
+        }
+        else if ($maxLength !== null && strlen($postData) > $maxLength)
+        {
+            array_push($_SESSION['errorMessage'], "The " . $input . " must not exceed " . $maxLength . " characters.");
             return false;
         }
         else if ($regex == false)
@@ -35,7 +40,6 @@ include("inc/contact_data.php");
         {
             return true;
         }
-        
     }
 
     if ($_SERVER["REQUEST_METHOD"] == "POST")
@@ -62,7 +66,7 @@ include("inc/contact_data.php");
         $isLastNameValid = validateInput($lastName, "Last Name", preg_match($nameRegex, $lastName));
         $isEmailValid = validateInput($email, "Email", filter_var($email, FILTER_VALIDATE_EMAIL));
         $isSubjectValid = validateInput($subject, "Subject");
-        $isMessageValid = validateInput($message, "Message");
+        $isMessageValid = validateInput($message, "Message", 500);
 
         if ($isFirstNameValid && $isLastNameValid && $isEmailValid && $isSubjectValid && $isMessageValid)
         {
@@ -100,7 +104,7 @@ include("inc/contact_data.php");
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Portfolio Main Page" />
-    <meta name="keywords" content="HTML, CSS, SCSS, SASS, JavaScript" />
+    <meta name="keywords" content="HTML, CSS, SCSS, SASS, JavaScript, PHP" />
     <meta name="author" content="Andrejs Volskis" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />

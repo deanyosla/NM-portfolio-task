@@ -309,26 +309,26 @@
     color: #000;
   }
 }
-.info_tab_one h4,
-.info_tab_two h4,
-.info_tab_three h4,
-.info_tab_four h4 {
+.info_tab_1 h4,
+.info_tab_2 h4,
+.info_tab_3 h4,
+.info_tab_4 h4 {
   text-decoration: none;
   cursor: pointer;
   &:hover {
       text-decoration: underline;
   }
 }
-.content-container,
-.content-container-two,
-.content-container-three,
-.content-container-four {
+.content-container-1,
+.content-container-2,
+.content-container-3,
+.content-container-4 {
   display: none;
 }
-.content-container.show,
-.content-container-two.show,
-.content-container-three.show,
-.content-container-four.show {
+.content-container-1.show,
+.content-container-2.show,
+.content-container-3.show,
+.content-container-4.show {
   display: block;  
 }
 .scs_h1,

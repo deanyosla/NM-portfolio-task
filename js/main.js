@@ -39,18 +39,9 @@ function typeWriter() {
 typeWriter();
 
 
-//Accordion for project cards to show up on click
-document.querySelector(".info_tab_one h4").addEventListener("click", function () {
-    document.querySelector(".content-container").classList.toggle("show");
-});
-
-document.querySelector(".info_tab_two h4").addEventListener("click", function () {
-    document.querySelector(".content-container-two").classList.toggle("show");
-});
-
-document.querySelector(".info_tab_three h4").addEventListener("click", function () {
-    document.querySelector(".content-container-three").classList.toggle("show");
-});
-document.querySelector(".info_tab_four h4").addEventListener("click", function () {
-    document.querySelector(".content-container-four").classList.toggle("show");
-});
+// accordion loop for information on project cards
+for (let i = 1; i <= 4; i++) {
+    document.querySelector(`.info_tab_${i} h4`).addEventListener("click", function () {
+        document.querySelector(`.content-container-${i}`).classList.toggle("show");
+    });
+}
