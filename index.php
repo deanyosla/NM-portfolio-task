@@ -133,10 +133,10 @@ include("inc/contact_data.php");
       <?php include ("inc/burger.php"); ?>
       <!-- main content -->
       <div class="main-content">
-        <div
+         <div
           class="banner-image"
           style="background-image: url('images/img-3.jpg')"
-        >
+         >    
           <h1 id="main"></h1>
           <p id="para-text"></p>
 
