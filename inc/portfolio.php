@@ -20,12 +20,21 @@
                   <i class="fa-brands fa-js"></i>
                   <i class="fa-brands fa-php"></i>
               </span>
-                <a
+              <div class="buttons">
+              <a
               href="http://netmatters.andrejs-volskis.netmatters-scs.co.uk/"
               class="project-btn"
               target="_blank"
-              >View Project <i class="fa-solid fa-arrow-right"></i
+              >Demo <i class="fa-solid fa-arrow-right"></i
             ></a>
+            <a
+              href="https://github.com/deanyosla/Netmatters-webpage"
+              class="project-btn"
+              target="_blank"
+              >Code <i class="fa-solid fa-arrow-right"></i
+            ></a>
+              </div>
+               
           </div>
          
           <div class="tab-2">
@@ -50,12 +59,21 @@
             <i class="fa-brands fa-js"></i>
             <i class="fa-brands fa-php"></i>
           </span>
+          <div class="buttons">
           <a
             href="http://netmatters.andrejs-volskis.netmatters-scs.co.uk/contact-us.php"
             class="project-btn"
             target="_blank"
-            >View Project <i class="fa-solid fa-arrow-right"></i
+            >Demo <i class="fa-solid fa-arrow-right"></i
           ></a>
+          <a
+            href="https://github.com/deanyosla/Netmatters-webpage"
+            class="project-btn"
+            target="_blank"
+            >Code <i class="fa-solid fa-arrow-right"></i
+          ></a>
+          </div>
+         
           </div>
           <div class="tab-3">
             <img
@@ -77,12 +95,20 @@
           <span class="code-icons">
                     <i class="fa-brands fa-html5"></i>
                     <i class="fa-brands fa-css3-alt"></i>
-                    <i class="fa-brands fa-sass"></i
-                  ><i class="fa-brands fa-js"></i>
+                    <i class="fa-brands fa-sass"></i>
+                    <i class="fa-brands fa-js"></i>
                 </span>
-            <a href="http://js-array.andrejs-volskis.netmatters-scs.co.uk/" class="project-btn"
-              >View Project <i class="fa-solid fa-arrow-right"></i
-            ></a> 
+                <div class="buttons">
+                <a href="http://js-array.andrejs-volskis.netmatters-scs.co.uk/" class="project-btn">
+                  Demo
+                <i class="fa-solid fa-arrow-right"></i>
+                </a> 
+               <a href="https://github.com/deanyosla/js-array" class="project-btn">
+                Code 
+                <i class="fa-solid fa-arrow-right"></i>
+               </a> 
+                </div>
+           
           </div>
           <div class="tab-4">
             <img
@@ -104,11 +130,14 @@
             <i class="fa-brands fa-php"></i>
             <i class="fa-brands fa-node-js"></i>
           </span>
+          <div class="buttons">
           <a
             href="https://github.com/deanyosla/laravel_app"
             class="project-btn"
             target="_blank"
-            >View Project <i class="fa-solid fa-arrow-right"></i
-          ></a>
+            >GitHub Repository <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+         
           </div>
         </div>

@@ -1,3 +1,4 @@
+<?php include("inc/validate.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -30,26 +31,30 @@
       <?php include ("inc/burger.php"); ?>
       <!-- main content -->
       <div class="main-content">
-        <div
-          class="banner-image banner-secondary"
-          style="background-image: url('images/img-3.jpg')"
-        >
-          <div class="text">
-            <h1 id="main"></h1>
-            <p id="para-text"></p>
+          <div
+            class="banner-image banner-secondary"
+            style="background-image: url('images/img-3.jpg')"
+          >
+            <div class="text">
+              <h1 id="main"></h1>
+              <p id="para-text"></p>
+            </div>
           </div>
-        </div>
-        <h1 class="code_h1">My Coding Examples</h1>
-        <!-- coding examples -->
-        <?php include ("inc/codes.php"); ?>
-        <div class="scroll-up">
-          <i class="fa-solid fa-chevron-up"></i><a href="#main">back to top</a>
-        </div>
-    </div>
+          <h1 class="code_h1">My Coding Examples</h1>
+          <!-- coding examples -->
+          <?php include ("inc/codes.php"); ?>
+          <!-- contact section --> 
+          <h1 class="h1-forms">Contact Me</h1>
+          <?php include ("inc/contact.php"); ?>
+          <div class="scroll-up">
+            <i class="fa-solid fa-chevron-up"></i><a href="#main">back to top</a>
+          </div>
+      </div>
       <!-- end of main content -->
    </div>
     <script src="js/jquery/jquery-3.7.1.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script>
       hljs.highlightAll();

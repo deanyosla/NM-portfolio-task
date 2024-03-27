@@ -1,4 +1,3 @@
-<div class="main-content">
         <div
           class="banner-image banner-secondary"
           style="background-image: url('images/img-3.jpg')"
@@ -52,8 +51,6 @@
             <span>Operate to strict company values</span>
           </div>
         </div>
-        <div class="scroll-up">
-          <i class="fa-solid fa-chevron-up"></i><a href="#main">back to top</a>
-        </div>
-      </div>
+       
+
  

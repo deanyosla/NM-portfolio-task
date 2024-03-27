@@ -1,3 +1,4 @@
+<?php include("inc/validate.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -39,15 +40,18 @@
         <!-- about me -->
         <?php include ("inc/about.php"); ?>
         <!-- end of about me -->
-        <div class="scroll-up">
-          <i class="fa-solid fa-chevron-up"></i><a href="#main">back to top</a>
-        </div>
-      </div>
-      
+           <!-- contact section --> 
+           <h1 class="h1-forms">Contact Me</h1>
+             <?php include ("inc/contact.php"); ?>
+             <div class="scroll-up">
+              <i class="fa-solid fa-chevron-up"></i><a href="#main">back to top</a>
+            </div>
+      </div>    
       <!-- end of main content -->     
     </div>
     <script src="js/jquery/jquery-3.7.1.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
     <script
       src="https://kit.fontawesome.com/5cbcf5da8c.js"
       crossorigin="anonymous"

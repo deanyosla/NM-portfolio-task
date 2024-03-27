@@ -91,6 +91,10 @@ textarea {
   }
 }
 
+.buttons {
+  display: inline-flex;
+  align-self: center;
+}
 .btn-submit,
 .project-btn {
   list-style: none;
@@ -98,7 +102,7 @@ textarea {
   border-radius: 5px;
   font-weight: $med-txt;
   color: $btn-regular;
-  padding: 15px;
+  padding: 12px;
   margin: 15px 10px;
   background-color: rgb(99, 97, 96);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);

@@ -1,3 +1,4 @@
+<?php include("inc/validate.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,17 +21,24 @@
   </head>
   <body>
     <div class="wrapper">
-       <!-- side navigation -->
-       <?php include ("inc/sidenav.php"); ?>
-      <!-- mobile nav  -->
-      <?php include ("inc/burger.php"); ?>
-      <!-- main content -->
-      <!-- scion scheme section -->
-      <?php include ("inc/scion.php"); ?>
-    </div>
+    <div class="main-content">
+        <!-- side navigation -->
+        <?php include ("inc/sidenav.php"); ?>
+        <!-- mobile nav  -->
+        <?php include ("inc/burger.php"); ?>
+        <!-- main content -->
+        <!-- scion scheme section -->
+        <?php include ("inc/scion.php"); ?>
+        <?php include ("inc/contact.php"); ?>
+             <div class="scroll-up">
+              <i class="fa-solid fa-chevron-up"></i><a href="#main">back to top</a>
+            </div>
+     </div>
+     </div>
       <!-- end of main content -->
     <script src="js/jquery/jquery-3.7.1.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
     <script
       src="https://kit.fontawesome.com/5cbcf5da8c.js"
       crossorigin="anonymous"

@@ -13,7 +13,7 @@
             </h4>
           </section>
           <section id="contact-form">
-            <form action="index.php" method="post">
+            <form action="#contact-form" method="post">
               <h2>Send me a message <i class="fa-solid fa-arrow-right"></i></h2>
               <div class="input-row">
                 <input id="first_name" name="first_name" type="text" value="<?php echo $_SESSION['first_name'] ?? ''; ?>" placeholder="First Name*">
@@ -26,7 +26,7 @@
                 <textarea id="message" name="message" value="<?php echo $_SESSION['message'] ?? ''; ?>" placeholder="<?php echo  $messageText ?>"></textarea>
               </div>
               <div>
-                <button class="btn-submit" type="submit" action="index.php">Submit</button>
+                <button class="btn-submit" type="submit" action="#contact-form">Submit</button>
               </div>
                
               <div class="alert-wrap">                        

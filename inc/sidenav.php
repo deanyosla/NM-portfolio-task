@@ -15,7 +15,7 @@
           <i class="fa-solid fa-graduation-cap"></i> SCS Scheme
         </a>
 
-        <a href="index.php#contact">
+        <a href="#contact">
           <i class="fa-solid fa-mobile-screen"></i> &nbsp;Contact Me
         </a>
 

@@ -100,7 +100,7 @@ const checkEmail = () => {
     let valid = false;
 
     const email = emailElement.value.trim();
-    console.log(email);
+    //console.log(email);
 
     
     if (!isEmailValid(email))
