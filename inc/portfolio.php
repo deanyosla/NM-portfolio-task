@@ -126,6 +126,8 @@
               </div>
           
           <span class="code-icons">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
             <i class="fa-brands fa-laravel"></i>
             <i class="fa-brands fa-php"></i>
             <i class="fa-brands fa-node-js"></i>

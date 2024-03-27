@@ -9,7 +9,7 @@
   width: auto;
   min-width: calc(15vw + 20px);
   height: 100vh;
-  background: $dark-bg;
+  background: linear-gradient(silver, $dark-bg);
   box-sizing: border-box;
 }
 
@@ -19,7 +19,7 @@
   bottom: 100%;
   width: auto;
   height: 100vh;
-  background: $dark-bg;
+  background: linear-gradient(silver, $dark-bg);
   border-right: 1px dotted $btn-hover;
   transition: 0.4s;
   z-index: 9;

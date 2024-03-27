@@ -165,7 +165,7 @@ a {
   width: auto;
   min-width: calc(15vw + 20px);
   height: 100vh;
-  background: #240600;
+  background: linear-gradient(silver, #240600);
   box-sizing: border-box;
 }
 
@@ -175,7 +175,7 @@ a {
   bottom: 100%;
   width: auto;
   height: 100vh;
-  background: #240600;
+  background: linear-gradient(silver, #240600);
   border-right: 1px dotted #de7325;
   transition: 0.4s;
   z-index: 9;

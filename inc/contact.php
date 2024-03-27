@@ -25,7 +25,7 @@
                 <input id="subject" name="subject" type="text" placeholder="Subject..." value="<?php echo $_SESSION['subject'] ?? ''; ?>">
                 <textarea id="message" name="message" value="<?php echo $_SESSION['message'] ?? ''; ?>" placeholder="<?php echo  $messageText ?>"></textarea>
               </div>
-              <div>
+              <div class="buttons">
                 <button class="btn-submit" type="submit" action="#contact-form">Submit</button>
               </div>
                

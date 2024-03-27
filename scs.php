@@ -29,6 +29,7 @@
         <!-- main content -->
         <!-- scion scheme section -->
         <?php include ("inc/scion.php"); ?>
+        <h1 class="h1-forms">Contact Me</h1>
         <?php include ("inc/contact.php"); ?>
              <div class="scroll-up">
               <i class="fa-solid fa-chevron-up"></i><a href="#main">back to top</a>
